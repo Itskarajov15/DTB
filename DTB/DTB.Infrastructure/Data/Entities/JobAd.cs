@@ -1,14 +1,12 @@
 ﻿namespace DTB.Infrastructure.Data.Entities
 {
-    public class Position
+    public class JobAd
     {
         public string Id { get; set; } = null!;
 
-        public string Profession { get; set; } = null!;
+        public Profession Profession { get; set; } = null!;
 
-        public int Experience { get; set; } // Може като стринг и да се пише текст в него вместо години
-
-        public List<string> Requirements { get; set; } = new();
+        public string Experience { get; set; } = null!;
 
         public string Description { get; set; } = null!;
 

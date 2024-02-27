@@ -12,6 +12,6 @@
 
         public DateTime DateOfCreation { get; set; }
 
-        public List<Comment> Messages { get; set; } = new();
+        public List<Comment> Comments { get; set; } = new();
     }
 }

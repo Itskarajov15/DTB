@@ -1,4 +1,6 @@
-﻿namespace DTB.Infrastructure.Data.Entities
+﻿using DTB.Infrastructure.Data.Enums;
+
+namespace DTB.Infrastructure.Data.Entities
 {
     public class User : BaseUser
     {
@@ -13,5 +15,7 @@
         public DateTime DateOfBirth { get; set; }
 
         public List<File> Files { get; set; } = new();
+
+        public Status Status { get; set; }
     }
 }

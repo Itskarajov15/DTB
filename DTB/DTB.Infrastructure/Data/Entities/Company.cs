@@ -6,9 +6,9 @@
 
         public string Address { get; set; } = null!;
 
-        public string Industry { get; set; } = null!;
+        public Category Category { get; set; } = null!;
 
-        public List<Position> Positions { get; set; } = new();
+        public List<JobAd> JobAds { get; set; } = new();
 
         public List<Location> Locations { get; set; } = new();
     }
