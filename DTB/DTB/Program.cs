@@ -1,3 +1,5 @@
+using DTB.Core.Contracts;
+using DTB.Core.Services;
 using DTB.Infrastructure.Data;
 using DTB.Infrastructure.Data.Entities;
 using Microsoft.AspNetCore.Identity;
@@ -23,6 +25,8 @@ namespace DTB
                 .AddSignInManager();
 
             builder.Services.AddControllersWithViews();
+
+            builder.Services.AddScoped<ICategoryService, CategoryService>();
 
             var app = builder.Build();
 
