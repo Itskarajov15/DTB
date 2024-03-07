@@ -14,7 +14,7 @@ namespace DTB.Core.Services
             _context = context;
         }
 
-        public async Task<List<CategoryViewModel>> GetAllCategories()
+        public async Task<List<CategoryViewModel>> GetAllCategoriesAsync()
         {
             return await _context
                 .Categories

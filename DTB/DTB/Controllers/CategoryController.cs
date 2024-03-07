@@ -15,7 +15,7 @@ namespace DTB.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAllCategories()
         {
-            var categories = await _categoryService.GetAllCategories();
+            var categories = await _categoryService.GetAllCategoriesAsync();
 
             return PartialView("_GetAllCategories", categories);
         }
