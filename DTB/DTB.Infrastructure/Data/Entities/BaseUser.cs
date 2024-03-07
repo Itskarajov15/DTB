@@ -1,17 +1,14 @@
-﻿namespace DTB.Infrastructure.Data.Entities
+﻿using Microsoft.AspNetCore.Identity;
+using System.ComponentModel.DataAnnotations;
+
+namespace DTB.Infrastructure.Data.Entities
 {
-    public abstract class BaseUser
+    public abstract class BaseUser : IdentityUser
     {
-        public string Id { get; set; } = null!;
-
-        public string Password { get; set; } = null!;
-
-        public string Email { get; set; } = null!;
-
-        public string PhoneNumber { get; set; } = null!;
-
+        [Required]
         public string ProfilePicture { get; set; } = null!;
 
+        [Required]
         public string Description { get; set; } = null!;
     }
 }

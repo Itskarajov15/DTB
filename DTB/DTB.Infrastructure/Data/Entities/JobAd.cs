@@ -1,13 +1,19 @@
-﻿namespace DTB.Infrastructure.Data.Entities
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace DTB.Infrastructure.Data.Entities
 {
     public class JobAd
     {
+        [Required]
         public string Id { get; set; } = null!;
 
         public Profession Profession { get; set; } = null!;
 
+        [Required]
+        [StringLength(100)]
         public string Experience { get; set; } = null!;
 
+        [Required]
         public string Description { get; set; } = null!;
 
         public Company Company { get; set; } = null!;

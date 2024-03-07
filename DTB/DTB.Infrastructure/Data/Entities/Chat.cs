@@ -1,7 +1,10 @@
-﻿namespace DTB.Infrastructure.Data.Entities
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace DTB.Infrastructure.Data.Entities
 {
     public class Chat
     {
+        [Required]
         public string Id { get; set; } = null!;
 
         public List<Message> Messages { get; set; } = new();
