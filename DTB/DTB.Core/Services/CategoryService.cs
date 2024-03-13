@@ -22,8 +22,10 @@ namespace DTB.Core.Services
                 {
                     Id = c.Id,
                     Name = c.Name,
-                    PictureUrl = c.PictureUrl
+                    PictureUrl = c.PictureUrl,
+                    DateOfCreation = c.DateOfCreation
                 })
+                .OrderBy(c => c.DateOfCreation)
                 .ToListAsync();
         }
     }

@@ -19,6 +19,13 @@
     <link rel="stylesheet" href="~/css/animate.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
@@ -58,33 +65,7 @@
     </div>
 
     <!-- ***** Header Area Start ***** -->
-    <header class="header-area header-sticky">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="main-nav">
-                        <!-- ***** Logo Start ***** -->
-                        <a href="index.html" class="logo">
-                            <h1>dreamteambuilders</h1>
-                        </a>
-                        <!-- ***** Logo End ***** -->
-                        <!-- ***** Menu Start ***** -->
-                        <ul class="nav">
-                            <li><a href="index.html" class="active">About Us</a></li>
-                            <li><a href="properties.html">Articles</a></li>
-                            <li><a href="property-details.html">Jobs</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
-                            <li><a href="login.html"><i class="fa fa-sign-in"></i> Sign in</a></li>
-                        </ul>
-                        <a class='menu-trigger'>
-                            <span>Menu</span>
-                        </a>
-                        <!-- ***** Menu End ***** -->
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
+
     <!-- ***** Header Area End ***** -->
 
     <div class="main-banner">
@@ -169,7 +150,7 @@
         </div>
     </div>
 
-    <div class="categories"></div>
+   @*  <div class="categories"></div> *@
 
     <div class="properties section">
         <div class="container">
@@ -303,9 +284,10 @@
     <script src="~/js/owl-carousel.js"></script>
     <script src="~/js/counter.js"></script>
     <script src="~/js/custom.js"></script>
-
+    @await RenderSectionAsync("Scripts", false)
 </body>
 </html>
+
 <script>
     $(document).ready(function () {
         $("#js-preloader").hide();

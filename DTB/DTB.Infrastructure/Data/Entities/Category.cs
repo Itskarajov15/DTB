@@ -19,5 +19,7 @@ namespace DTB.Infrastructure.Data.Entities
         public List<Company> Companies { get; set; } = new();
 
         public List<Profession> Professions { get; set; } = new();
+
+        public DateTime DateOfCreation { get; set; }
     }
 }
