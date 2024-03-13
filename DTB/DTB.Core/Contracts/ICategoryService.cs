@@ -4,6 +4,6 @@ namespace DTB.Core.Contracts
 {
     public interface ICategoryService
     {
-        Task<List<CategoryViewModel>> GetAllCategories();
+        Task<List<CategoryViewModel>> GetAllCategoriesAsync();
     }
 }
