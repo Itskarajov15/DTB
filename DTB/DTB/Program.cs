@@ -27,6 +27,7 @@ namespace DTB
             builder.Services.AddControllersWithViews();
 
             builder.Services.AddScoped<ICategoryService, CategoryService>();
+            builder.Services.AddScoped<ILocationService, LocationService>();
 
             var app = builder.Build();
 

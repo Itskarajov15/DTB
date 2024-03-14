@@ -38,6 +38,7 @@ namespace DTB.Infrastructure.Data
         protected override void OnModelCreating(ModelBuilder builder)
         {
             new CategoryEntityConfiguration().Configure(builder.Entity<Category>());
+            new LocationEntityConfiguration().Configure(builder.Entity<Location>());
 
             base.OnModelCreating(builder);
         }

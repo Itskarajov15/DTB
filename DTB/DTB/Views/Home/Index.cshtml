@@ -1,8 +1,189 @@
-﻿@{
+﻿@model HomePageViewModel
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="main-banner">
+    <div class="owl-carousel owl-banner">
+        <div class="item item-1">
+            <div class="header-text">
+                <span class="category">Find A Perfect Job <em>To Live Your Dream Life</em></span>
+                <h2>
+                    Finding the perfect job<br> isn't just about searching for
+                    a paycheck.
+                </h2>
+            </div>
+        </div>
+        <div class="item item-2">
+            <div class="header-text">
+                <span class="category">Crafting <em>Success</em></span>
+                <h2>Job hunting is about<br> finding the right fit for your aspirations and skills.</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ***** Searching ***** -->
+<div class="container-fluid mb-5 wow fadeIn" data-wow-delay="0.1s" style="background-color: #F1D9D4; padding: 35px;">
+    <div class="container">
+        <div class="row g-2">
+            <div class="col-md-10">
+                <div class="row g-2">
+                    <div class="col-md-4">
+                        <input type="text" class="form-control border-0 py-3" placeholder="Search Keyword">
+                    </div>
+                    <div class="col-md-4">
+                        <select class="form-select border-0 py-3">
+                            <option selected>Categories</option>
+                            @for (int i = 0; i < Model.Categories.Count; i++)
+                            {
+                                <option value="@i + 1">@Model.Categories[i].Name</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <select class="form-select border-0 py-3">
+                            <option selected>Location</option>
+                            @for (int i = 0; i < Model.Locations.Count; i++)
+                            {
+                                <option value="@i + 1">@Model.Locations[i].Name</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <button class="btn btn-dark border-0 w-100 py-3">Search</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <h1 class="mb-3">Categories</h1>
+            <p>Unlock your future with the right choice.</p>
+        </div>
+        <div class="row g-4">
+            @foreach (var category in Model.Categories)
+            {
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <a class="cat-item d-block bg-light text-center rounded p-3" style="height:360px" href="">
+                        <div class="rounded p-4" style="height:326px">
+                            <div class="icon mb-3">
+                                <img class="img-fluid" src="@category.PictureUrl" alt="Icon">
+                            </div>
+                            <h6>@category.Name</h6>
+                            <span>123 Properties</span>
+                        </div>
+                    </a>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<div class="properties section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-heading text-center">
+                    <h6>Articles</h6>
+                    <h2>Count on us for premium articles curated for your interests. </h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="item">
+                    <a href="article_revolutionizing.html"><img src="~/images/property-01.jpg" alt=""></a>
+                    <span class="category">New</span>
+                    <h6>14.02.2024</h6>
+                    <h4>
+                        <a href="article_revolutionizing.html">
+                            Revolutionizing Recruitment:
+                            Leveraging Technology to Streamline the Hiring Process
+                        </a>
+                    </h4>
+                    <ul>
+                        <li>Author: <span>Ivan Petrov</span></li>
+                    </ul>
+                    <div class="main-button">
+                        <a href="article_revolutionizing.html">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="item">
+                    <a href="article_navigating.html"><img src="~/images/property-03.png" alt=""></a>
+                    <span class="category">New</span>
+                    <h6>01.03.2024</h6>
+                    <h4>
+                        <a href="article_navigating.html">
+                            Navigating Diversity and Inclusion in
+                            Hiring: Best Practices for Building an Inclusive Workforce
+                        </a>
+                    </h4>
+                    <ul>
+                        <li>Author: <span>Maria Dimitrova</span></li>
+                    </ul>
+                    <div class="main-button">
+                        <a href="article_navigating.html">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="item">
+                    <a href="article_masteringart.html"><img src="~/images/property-06.png" alt=""></a>
+                    <span class="category">New</span>
+                    <h6>22.04.2024</h6>
+                    <h4><a href="article_masteringart.html">Mastering the Art of Candidate Sourcing: Effective Strategies for Recruitment Success</a></h4>
+                    <ul>
+                        <li>Author: <span>Georgi Ivanov</span></li>
+                    </ul>
+                    <div class="main-button">
+                        <a href="article_masteringart.html">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="contact section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 offset-lg-4">
+                <div class="section-heading text-center">
+                    <h6 style="color: black;">Contact Us</h6>
+                    <h2 style="color: black;">Get In Touch With Us</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="contact-content">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-7 mx-auto">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="item phone">
+                            <img src="~/images/phone-icon.png" alt="" style="max-width: 52px;">
+                            <h6>+359 2 123 4567<br><span>Phone Number</span></h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="item email">
+                            <img src="~/images/email-icon.png" alt="" style="max-width: 52px;">
+                            <h6>dtb@gmail.com<br><span>Business Email</span></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
