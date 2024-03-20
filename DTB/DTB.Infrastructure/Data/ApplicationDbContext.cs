@@ -10,7 +10,6 @@ namespace DTB.Infrastructure.Data
         public ApplicationDbContext(DbContextOptions options) : base(options)
         {
         }
-
         public DbSet<Article> Articles { get; set; }
 
         public DbSet<Company> Companies { get; set; }
