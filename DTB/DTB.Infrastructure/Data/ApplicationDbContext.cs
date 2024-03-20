@@ -2,8 +2,6 @@
 using DTB.Infrastructure.Data.Entities;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using System.Reflection.Emit;
-using System.Reflection.Metadata;
 
 namespace DTB.Infrastructure.Data
 {
@@ -34,6 +32,8 @@ namespace DTB.Infrastructure.Data
         public DbSet<Message> Messages { get; set; }
 
         public DbSet<Profession> Professions { get; set; }
+
+        public DbSet<ContactFormSubmission> ContactFormSubmissions { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

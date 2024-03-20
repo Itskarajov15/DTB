@@ -18,11 +18,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DTB.Core\DTB.Core.csproj" />
+    <Folder Include="Areas\Identity\Data\" />
+    <Folder Include="Models\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\Identity\Data\" />
+    <ProjectReference Include="..\DTB.Core\DTB.Core.csproj" />
+    <ProjectReference Include="..\DTB.ViewModels\DTB.ViewModels.csproj" />
   </ItemGroup>
 
 </Project>
