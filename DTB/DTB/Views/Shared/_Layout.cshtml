@@ -29,20 +29,47 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
-<header class="header-area header-sticky">
+<div class="sub-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-8">
+                <ul class="info">
+                    <li><i class="fa fa-envelope"></i> dreamteambuilders@gmail.com</li>
+                    <li><i class="fa fa-map"></i> Sofia Studentski grad blok 4</li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <ul class="social-links">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<header class="header-area">
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <nav class="main-nav">
-                    <!-- ***** Logo Start ***** -->
                     <a href="index.html" class="logo">
                         <h1>dreamteambuilders</h1>
                     </a>
-                    <!-- ***** Logo End ***** -->
-                    <!-- ***** Menu Start ***** -->
                     <ul class="nav">
                         <li><a href="index.html" class="active">About Us</a></li>
-                        <li><a href="properties.html">Articles</a></li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Articles
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Create</a>
+                                    <a class="dropdown-item" href="#">View Articles</a>
+                                </div>
+                            </div>
+                        </li>
                         <li><a href="property-details.html">Jobs</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
                         <li><a asp-area="Identity" asp-page="/Account/Register"><i class="fa fa-sign-in"></i> Sign in</a></li>
@@ -50,7 +77,6 @@
                     <a class='menu-trigger'>
                         <span>Menu</span>
                     </a>
-                    <!-- ***** Menu End ***** -->
                 </nav>
             </div>
         </div>
@@ -58,8 +84,6 @@
 </header>
 
 <body>
-
-    <!-- ***** Preloader Start ***** -->
     <div id="js-preloader" class="js-preloader">
         <div class="preloader-inner">
             <span class="dot"></span>
@@ -70,29 +94,8 @@
             </div>
         </div>
     </div>
-    <!-- ***** Preloader End ***** -->
 
-    <div class="sub-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-md-8">
-                    <ul class="info">
-                        <li><i class="fa fa-envelope"></i> dreamteambuilders@gmail.com</li>
-                        <li><i class="fa fa-map"></i> Sofia Studentski grad blok 4</li>
-                    </ul>
-                </div>
-                <div class="col-lg-4 col-md-4">
-                    <ul class="social-links">
-                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
+    <div>
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
@@ -123,22 +126,3 @@
     @await RenderSectionAsync("Scripts", false)
 </body>
 </html>
-
-<script>
-    $(document).ready(function () {
-        $("#js-preloader").hide();
-
-        //Get all the categories(Move to a function)
-        $.ajax({
-            url: '@Url.Action("GetAllCategories", "Category")',
-            type: 'GET',
-            success: function (result) {
-                $('.categories').html(result);
-                //insert a loader until the categories are visualized
-            },
-            error: function (xhr, status, error) {
-                console.error("Error loading categories: ", error);
-            }
-        });
-    });
-</script>

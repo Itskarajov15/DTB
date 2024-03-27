@@ -111,7 +111,6 @@ body {
   font-size: 40px;
   font-weight: 700;
   text-transform: capitalize;
-  margin-top: 20px;
   line-height: 56px;
 }
 
@@ -286,10 +285,10 @@ Header Style
 --------------------------------------------- 
 */
 
-.sub-header {
-  background-color: #93b874;
-  padding: 10px 0px;
-  border-bottom: 1px solid #444f45;
+.sub-headersub-header {
+    background-color: #93b874;
+    padding: 10px 0px;
+    border-bottom: 1px solid #444f45;
 }
 
 .sub-header ul li {
@@ -394,7 +393,6 @@ Header Style
 
 .header-area .main-nav ul.nav {
     flex-basis: 100%;
-    margin-top: 20px;
     justify-content: right;
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
@@ -494,9 +492,6 @@ Header Style
   top: 22px;
 }
 
-.background-header .main-nav ul.nav {
-  margin-top: 20px;
-}
 
 .header-area .main-nav .menu-trigger span,
 .header-area .main-nav .menu-trigger span:before,
@@ -707,6 +702,11 @@ Header Style
 Banner Style
 --------------------------------------------- 
 */
+
+.main-banner {
+    width: 100vw;
+    margin-right: 0;
+}
 
 .main-banner .item {
   background-position: center center;
