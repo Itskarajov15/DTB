@@ -393,15 +393,17 @@ Header Style
 }
 
 .header-area .main-nav ul.nav {
-  flex-basis: 100%;
-  margin-top: 30px;
-  justify-content: right;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  position: relative;
-  z-index: 999;
+    flex-basis: 100%;
+    margin-top: 20px;
+    justify-content: right;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    position: relative;
+    z-index: 999;
+    align-items: baseline;
+    margin-left: 50px;
 }
 
 .header-area .main-nav .nav li:last-child {
@@ -433,7 +435,7 @@ Header Style
   letter-spacing: .25px;
 }
 
-.header-area .main-nav .nav li:last-child a {
+/*.header-area .main-nav .nav li:last-child a {
   background-color: #444f45;
   color: #fff;
   font-size: 14px;
@@ -441,9 +443,9 @@ Header Style
   text-transform: none;
   border-radius: 20px;
   padding-left: 0px;
-}
+}*/
 
-.header-area .main-nav .nav li:last-child a i {
+/*.header-area .main-nav .nav li:last-child a i {
   background-color: #FFCF5A;
   display: inline-block;
   width: 40px;
@@ -453,7 +455,7 @@ Header Style
   margin-right: 10px;
   border-radius: 50%;
   margin-left: -1px;
-}
+}*/
 
 .header-area .main-nav .nav li:last-child:hover a {
   background-color: #444f45;
@@ -467,9 +469,9 @@ Header Style
   color: #FFCF5A;
 }
 
-.header-area .main-nav .nav li a.active {
+/*.header-area .main-nav .nav li a.active {
   color: #FFCF5A;
-}
+}*/
 
 
 .background-header .main-nav .nav li a.active {
@@ -1419,9 +1421,9 @@ body {
     padding-left: 3px;
     padding-right: 3px;
   }
-  .header-area .main-nav .nav li:last-child a {
+ /* .header-area .main-nav .nav li:last-child a {
     padding-right: 15px;
-  }
+  }*/
   .main-banner .item h2 {
     width: 100%;
   }

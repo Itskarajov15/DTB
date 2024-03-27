@@ -1,14 +1,11 @@
 ﻿using Microsoft.AspNetCore.Identity;
-using System.ComponentModel.DataAnnotations;
 
 namespace DTB.Infrastructure.Data.Entities
 {
-    public abstract class BaseUser : IdentityUser
+    public class BaseUser : IdentityUser
     {
-        [Required]
-        public string ProfilePicture { get; set; } = null!;
+        public string? ProfilePicture { get; set; }
 
-        [Required]
-        public string Description { get; set; } = null!;
+        public string? Description { get; set; }
     }
 }
