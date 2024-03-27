@@ -28,6 +28,7 @@ namespace DTB
 
             builder.Services.AddScoped<ICategoryService, CategoryService>();
             builder.Services.AddScoped<ILocationService, LocationService>();
+            builder.Services.AddScoped<IArticleService, ArticleService>();
 
             var app = builder.Build();
 

@@ -33,8 +33,24 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <nav class="navbar navbar-expand-lg navbar-light navigation">
-                    <partial name="_MainMenu" />
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <h1>dreamteambuilders</h1>
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li><a href="index.html" class="active">About Us</a></li>
+                        <li><a href="properties.html">Articles</a></li>
+                        <li><a href="property-details.html">Jobs</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a asp-area="Identity" asp-page="/Account/Register"><i class="fa fa-sign-in"></i> Sign in</a></li>
+                    </ul>
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
                 </nav>
             </div>
         </div>
