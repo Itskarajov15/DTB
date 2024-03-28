@@ -5,7 +5,7 @@ using System.Net;
 
 namespace DTB.Controllers
 {
-    public class ArticleController : Controller
+    public class ArticleController : BaseController
     {
         private readonly IArticleService articleService;
 
@@ -61,6 +61,12 @@ namespace DTB.Controllers
 
             //TempData[SuccessMessage] = "You have added a new article successfully!";
             return RedirectToAction("Index", "Home");
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> All()
+        {
+            return View();
         }
     }
 }

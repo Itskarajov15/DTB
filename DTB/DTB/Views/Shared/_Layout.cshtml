@@ -1,4 +1,9 @@
-﻿<!DOCTYPE html>
+﻿@using DTB.Infrastructure.Data.Entities
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<BaseUser> SignInManager
+@inject UserManager<BaseUser> UserManager
+
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -54,25 +59,28 @@
         <div class="row">
             <div class="col-12">
                 <nav class="main-nav">
-                    <a href="index.html" class="logo">
+                    <a asp-controller="Home" asp-action="Index" class="logo">
                         <h1>dreamteambuilders</h1>
                     </a>
                     <ul class="nav">
-                        <li><a href="index.html" class="active">About Us</a></li>
                         <li>
                             <div class="dropdown">
                                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Articles
                                 </button>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">Create</a>
-                                    <a class="dropdown-item" href="#">View Articles</a>
+                                    <a class="dropdown-item" asp-controller="Article" asp-action="Add">Create</a>
+                                    <a class="dropdown-item" asp-controller="Article" asp-action="All">View Articles</a>
                                 </div>
                             </div>
                         </li>
                         <li><a href="property-details.html">Jobs</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
-                        <li><a asp-area="Identity" asp-page="/Account/Register"><i class="fa fa-sign-in"></i> Sign in</a></li>
+                        <li><a href="index.html" class="active">About Us</a></li>
+                        @if (!SignInManager.IsSignedIn(User))
+                        {
+                            <li><a asp-area="Identity" asp-page="/Account/Register"><i class="fa fa-sign-in"></i> Sign in</a></li>
+                        }
                     </ul>
                     <a class='menu-trigger'>
                         <span>Menu</span>

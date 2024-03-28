@@ -1,11 +1,12 @@
 using DTB.Core.Contracts;
 using DTB.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
 namespace DTB.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
         private readonly ILogger<HomeController> _logger;
         private readonly ICategoryService _categoryService;
@@ -21,6 +22,7 @@ namespace DTB.Controllers
             _locationService = locationService;
         }
 
+        [AllowAnonymous]
         public async Task<IActionResult> Index()
         {
             var vm = new HomePageViewModel();
