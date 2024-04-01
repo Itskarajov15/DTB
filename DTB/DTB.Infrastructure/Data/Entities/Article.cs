@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DTB.Infrastructure.Data.Entities
 {
@@ -14,7 +15,10 @@ namespace DTB.Infrastructure.Data.Entities
         [Required]
         public string Content { get; set; } = null!;
 
-        public BaseUser Author { get; set; } = null!;
+        [ForeignKey(nameof(Author))]
+        public string AuthorId { get; set; } = null!;
+
+        public User Author { get; set; } = null!;
 
         public DateTime DateOfCreation { get; set; }
 

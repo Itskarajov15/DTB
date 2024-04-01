@@ -38,6 +38,8 @@ namespace DTB.Infrastructure.Data
         {
             new CategoryEntityConfiguration().Configure(builder.Entity<Category>());
             new LocationEntityConfiguration().Configure(builder.Entity<Location>());
+            new UserEntityConfiguration().Configure(builder.Entity<User>());
+            new ArticleEntityConfiguration().Configure(builder.Entity<Article>());
 
             base.OnModelCreating(builder);
         }

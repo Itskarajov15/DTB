@@ -66,7 +66,9 @@ namespace DTB.Controllers
         [HttpGet]
         public async Task<IActionResult> All()
         {
-            return View();
+            var articles = await articleService.GetAllAsync();
+
+            return View(articles);
         }
     }
 }

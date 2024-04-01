@@ -17,7 +17,7 @@ namespace DTB.Infrastructure.Data.Entities
         [StringLength(50)]
         public string LastName { get; set; } = null!;
 
-        public Profession Profession { get; set; } = null!;
+        public Profession? Profession { get; set; }
 
         public DateTime DateOfBirth { get; set; }
 

@@ -2,6 +2,8 @@
 using DTB.Infrastructure.Data;
 using DTB.Infrastructure.Data.Entities;
 using DTB.Models.Article;
+using DTB.ViewModels.Article;
+using Microsoft.EntityFrameworkCore;
 
 namespace DTB.Core.Services
 {
@@ -24,6 +26,23 @@ namespace DTB.Core.Services
             await this.context.SaveChangesAsync();
 
             return article.Id;
+        }
+
+        public async Task<List<GetAllArticlesViewModel>> GetAllAsync()
+        {
+            return await context
+                .Articles
+                .Include(a => a.Author)
+                .Select(a => new GetAllArticlesViewModel
+                {
+                    Id = a.Id,
+                    AuthorId = a.AuthorId,
+                    AuthorName = $"{a.Author.FirstName} {a.Author.LastName}",
+                    DateOfCreation = a.DateOfCreation.ToString("dd/mm/yyyy"),
+                    ImageUrl = a.ImageUrl,
+                    Title = a.Title
+                })
+                .ToListAsync();
         }
     }
 }
