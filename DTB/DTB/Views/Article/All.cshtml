@@ -21,23 +21,42 @@
             </div>
         </div>
     </div>
-    <div style="display:flex;justify-content:space-between;">
+    <div class="row">
         @for (int i = 0; i < Model.Count; i++)
         {
-            <div style="min-width:300px;max-width:300px;">
-                <a href="article_revolutionizing.html"><img src="@Model[i].ImageUrl" alt=""></a>
-                <span class="category">New</span>
-                <h6>@Model[i].DateOfCreation</h6>
-                <h4>
-                    <a href="article_revolutionizing.html">@Model[i].Title</a>
-                </h4>
-                <ul>
-                    <li>Author: <span>@Model[i].AuthorName</span></li>
-                </ul>
-                <div class="main-button">
-                    <a href="article_revolutionizing.html">View</a>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="@Model[i].ImageUrl" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">@Model[i].Title</h5>
+                            <h3 class="card-title">@Model[i].DateOfCreation</h3>
+                            <p class="card-text">Author: @Model[i].AuthorName</p>
+                            <a href="#" class="btn btn-primary">View</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         }
     </div>
+
+    @*  <div style="display:flex;justify-content:space-between;">
+    @for (int i = 0; i < Model.Count; i++)
+    {
+    <div style="min-width:300px;max-width:300px;">
+    <a href="article_revolutionizing.html"><img src="@Model[i].ImageUrl" alt=""></a>
+    <span class="category">New</span>
+    <h6>@Model[i].DateOfCreation</h6>
+    <h4>
+    <a href="article_revolutionizing.html">@Model[i].Title</a>
+    </h4>
+    <ul>
+    <li>Author: <span>@Model[i].AuthorName</span></li>
+    </ul>
+    <div class="main-button">
+    <a href="article_revolutionizing.html">View</a>
+    </div>
+    </div>
+    }
+    </div> *@
 </div>
