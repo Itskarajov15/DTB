@@ -1,5 +1,6 @@
 ﻿using DTB.Infrastructure.Data.Configurations;
 using DTB.Infrastructure.Data.Entities;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
@@ -38,6 +39,7 @@ namespace DTB.Infrastructure.Data
         {
             new CategoryEntityConfiguration().Configure(builder.Entity<Category>());
             new LocationEntityConfiguration().Configure(builder.Entity<Location>());
+            new UserRoleEntityConfiguration().Configure(builder.Entity<IdentityRole>());
             new UserEntityConfiguration().Configure(builder.Entity<User>());
             new ArticleEntityConfiguration().Configure(builder.Entity<Article>());
 
