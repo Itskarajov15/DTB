@@ -79,7 +79,20 @@
                         <li><a href="index.html" class="active">About Us</a></li>
                         @if (!SignInManager.IsSignedIn(User))
                         {
-                            <li><a asp-area="Identity" asp-page="/Account/Register"><i class="fa fa-sign-in"></i> Sign in</a></li>
+                            @* <li><a asp-area="Identity" asp-page="/Account/Register"><i class="fa fa-sign-in"></i> Sign in</a></li> *@
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Sign in
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" asp-controller="Account" asp-action="UserRegister">Register as a User</a>
+                                    <a class="dropdown-item" asp-controller="Account" asp-action="CompanyRegister">Register as a Company</a>
+                                </div>
+                            </div>
+                        }
+                        else
+                        {
+                            <li><a asp-area="Identity" asp-page="/Account/Logout"><i class="fa fa-sign-in"></i> Sign in</a></li>
                         }
                     </ul>
                     <a class='menu-trigger'>
