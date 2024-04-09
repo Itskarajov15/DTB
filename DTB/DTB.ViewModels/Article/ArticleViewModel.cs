@@ -1,9 +1,10 @@
-﻿
-using DTB.Infrastructure.Data.Entities;
+﻿using DTB.Infrastructure.Data.Entities;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
 namespace DTB.ViewModels.Article
 {
-    public class AddArticleViewModel
+    public class ArticleViewModel
     {
         public string Id { get; set; } = null!;
 
@@ -13,9 +14,9 @@ namespace DTB.ViewModels.Article
 
         public string AuthorId { get; set; } = null!;
 
-        public BaseUser Author { get; set; } = null!;
+        public string AuthorName { get; set; } = null!;
 
-        public DateTime DateOfCreation { get; set; }
+        public string DateOfCreation { get; set; } = null!;
 
         public string ImageUrl { get; set; } = null!;
     }

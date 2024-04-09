@@ -32,7 +32,7 @@
                             <h5 class="card-title">@Model[i].Title</h5>
                             <h3 class="card-title">@Model[i].DateOfCreation</h3>
                             <p class="card-text">Author: @Model[i].AuthorName</p>
-                            <a href="#" class="btn btn-primary">View</a>
+                            <a asp-action="Article" asp-controller="Article" asp-route-id="@Model[i].Id" class="btn btn-primary">View</a>
                         </div>
                     </div>
                 </div>

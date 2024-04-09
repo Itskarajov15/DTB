@@ -1,5 +1,5 @@
 ﻿using DTB.Core.Contracts;
-using DTB.Models.Article;
+using DTB.ViewModels.Article;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
 
@@ -69,6 +69,14 @@ namespace DTB.Controllers
             var articles = await articleService.GetAllAsync();
 
             return View(articles);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Article(string id)
+        {
+            var article = await articleService.GetAricleByIdAsync(id);
+
+            return View(article);
         }
     }
 }

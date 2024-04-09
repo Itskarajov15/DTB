@@ -1,5 +1,4 @@
-﻿using DTB.Models.Article;
-using DTB.ViewModels.Article;
+﻿using DTB.ViewModels.Article;
 
 namespace DTB.Core.Contracts
 {
@@ -8,5 +7,7 @@ namespace DTB.Core.Contracts
         Task<string> AddArticleAsync(AddArticleViewModel model, string id);
 
         Task<List<GetAllArticlesViewModel>> GetAllAsync();
+
+        Task<ArticleViewModel> GetAricleByIdAsync(string id);
     }
 }
