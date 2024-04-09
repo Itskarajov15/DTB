@@ -1,7 +1,7 @@
-﻿@using DTB.Areas.Identity.Pages.Account
-@model RegisterModel
+﻿@using DTB.ViewModels.Account
+@model UserRegisterViewModel
 @{
-    ViewData["Title"] = "Register User";
+    ViewData["Title"] = "Register a User";
 }
 
 <div class="row justify-content-center align-items-center">
@@ -9,21 +9,45 @@
         <form id="registerForm" method="post" class="register-container">
             <h2>@ViewData["Title"]</h2>
             <hr />
+            @if (Model != null && Model.Errors.Count > 0)
+            {
+                <div class="text-danger errors">
+                    @foreach (var error in Model.Errors)
+                    {
+                        <span>@error</span>
+                    }
+                </div>
+            }
             <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
             <div class="form-floating mb-3">
-                <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
-                <label asp-for="Input.Email">Email</label>
-                <span asp-validation-for="Input.Email" class="text-danger"></span>
+                <input asp-for="Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
+                <label asp-for="Email">Email</label>
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>  
+            <div class="form-floating mb-3">
+                <input asp-for="FirstName" class="form-control" placeholder="First Name" aria-required="true" />
+                <label asp-for="FirstName">First Name</label>
+                <span asp-validation-for="FirstName" class="text-danger"></span>
             </div>
             <div class="form-floating mb-3">
-                <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
-                <label asp-for="Input.Password">Password</label>
-                <span asp-validation-for="Input.Password" class="text-danger"></span>
+                <input asp-for="MiddleName" class="form-control" placeholder="Middle Name" aria-required="true" />
+                <label asp-for="MiddleName">Middle Name</label>
+                <span asp-validation-for="MiddleName" class="text-danger"></span>
             </div>
             <div class="form-floating mb-3">
-                <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
-                <label asp-for="Input.ConfirmPassword">Confirm Password</label>
-                <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                <input asp-for="LastName" class="form-control" placeholder="Last Name" aria-required="true" />
+                <label asp-for="LastName">Last Name</label>
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
+                <label asp-for="Password">Password</label>
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-3">
+                <input asp-for="ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
+                <label asp-for="ConfirmPassword">Confirm Password</label>
+                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
             </div>
             <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-outline-success">Register</button>
         </form>
