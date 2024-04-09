@@ -73,3 +73,7 @@
 .text-danger {
     color: #dc3545;
 }
+
+.errors {
+    margin-bottom: 15px !important;
+}
