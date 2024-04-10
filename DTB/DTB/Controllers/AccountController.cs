@@ -3,23 +3,31 @@ using DTB.ViewModels.Account;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace DTB.Controllers
 {
     public class AccountController : BaseController
     {
         private UserManager<BaseUser> userManager;
+        private SignInManager<BaseUser> signInManager;
 
-        public AccountController(UserManager<BaseUser> userManager)
+        public AccountController(
+            UserManager<BaseUser> userManager,
+            SignInManager<BaseUser> signInManager)
         {
             this.userManager = userManager;
+            this.signInManager = signInManager;
         }
 
         [HttpGet]
         [AllowAnonymous]
         public IActionResult UserRegister()
         {
+            if (User?.Identity?.IsAuthenticated ?? false)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+
             return View();
         }
 
@@ -66,7 +74,6 @@ namespace DTB.Controllers
         [AllowAnonymous]
         public IActionResult CompanyRegister()
         {
-            //ViewData["Title"] = "Company Register";
             return View();
         }
 
@@ -74,8 +81,43 @@ namespace DTB.Controllers
         [AllowAnonymous]
         public IActionResult Login()
         {
-            //ViewData["Title"] = "Company Register";
+            if (User?.Identity?.IsAuthenticated ?? false)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+
             return View();
+        }
+
+        [HttpPost]
+        [AllowAnonymous]
+        public async Task<IActionResult> Login(LoginViewModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(ModelState);
+            }
+
+            var user = await userManager.FindByEmailAsync(model.Email);
+
+            if (user == null)
+            {
+                model.Errors.Add("Invalid login credentials");
+
+                return View(model);
+            }
+
+            var result = await signInManager.PasswordSignInAsync(user, model.Password, false, false);
+
+            if (!result.Succeeded)
+            {
+                model.Errors.Add("Invalid login credentials");
+
+                return View(model);
+            }
+
+            
+            return RedirectToAction("Index", "Home");
         }
     }
 }
