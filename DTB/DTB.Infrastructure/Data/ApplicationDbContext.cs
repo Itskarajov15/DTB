@@ -42,6 +42,7 @@ namespace DTB.Infrastructure.Data
             new UserRoleEntityConfiguration().Configure(builder.Entity<IdentityRole>());
             new UserEntityConfiguration().Configure(builder.Entity<User>());
             new ArticleEntityConfiguration().Configure(builder.Entity<Article>());
+            new ProfessionEntityConfiguration().Configure(builder.Entity<Profession>()); 
 
             base.OnModelCreating(builder);
         }
