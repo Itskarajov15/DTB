@@ -1,4 +1,6 @@
-﻿using DTB.Infrastructure.Data.Entities;
+﻿using DTB.Core.Contracts;
+using DTB.Core.Models.Categories;
+using DTB.Infrastructure.Data.Entities;
 using DTB.ViewModels.Account;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -10,13 +12,16 @@ namespace DTB.Controllers
     {
         private UserManager<BaseUser> userManager;
         private SignInManager<BaseUser> signInManager;
+        private ICategoryService categoryService;
 
         public AccountController(
             UserManager<BaseUser> userManager,
-            SignInManager<BaseUser> signInManager)
+            SignInManager<BaseUser> signInManager,
+            ICategoryService categoryService)
         {
             this.userManager = userManager;
             this.signInManager = signInManager;
+            this.categoryService = categoryService;
         }
 
         [HttpGet]
@@ -72,9 +77,49 @@ namespace DTB.Controllers
 
         [HttpGet]
         [AllowAnonymous]
-        public IActionResult CompanyRegister()
+        public async Task<IActionResult> CompanyRegister()
         {
-            return View();
+            var registerViewModel = new CompanyRegisterViewModel();
+            registerViewModel.Categories = await this.categoryService.GetAllCategoriesAsync();
+
+            return View(registerViewModel);
+        }
+
+        [HttpPost]
+        [AllowAnonymous]
+        public async Task<IActionResult> CompanyRegister(CompanyRegisterViewModel reqModel)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(ModelState);
+            }
+
+            var company = new Company
+            {
+                UserName = reqModel.Email,
+                NormalizedUserName = reqModel.Email.ToUpper(),
+                NormalizedEmail = reqModel.Email.ToUpper(),
+                Name = reqModel.Name,
+                Address = reqModel.Address,
+                CategoryId = reqModel.CategoryId,
+                Email = reqModel.Email
+            };
+
+            var result = await userManager.CreateAsync(company, reqModel.Password);
+
+            if (result.Succeeded)
+            {
+                await userManager.AddToRoleAsync(company, "Company");
+
+                return RedirectToAction(nameof(Login));
+            }
+
+            reqModel.Errors = result
+                                .Errors
+                                .Select(e => e.Description)
+                                .ToList();
+
+            return View(reqModel);
         }
 
         [HttpGet]
@@ -116,7 +161,19 @@ namespace DTB.Controllers
                 return View(model);
             }
 
-            
+            return RedirectToAction("Index", "Home");
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Logout()
+        {
+            if (!User?.Identity?.IsAuthenticated ?? false)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+
+            await signInManager.SignOutAsync();
+
             return RedirectToAction("Index", "Home");
         }
     }

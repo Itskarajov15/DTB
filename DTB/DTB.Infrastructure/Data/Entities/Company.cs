@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DTB.Infrastructure.Data.Entities
 {
@@ -12,9 +13,13 @@ namespace DTB.Infrastructure.Data.Entities
         [StringLength(255)]
         public string Address { get; set; } = null!;
 
+        [ForeignKey(nameof(CategoryId))]
         public Category Category { get; set; } = null!;
 
         public List<JobAd> JobAds { get; set; } = new();
+
+        [Required]
+        public string CategoryId { get; set; } = null!;
 
         public List<Location> Locations { get; set; } = new();
     }

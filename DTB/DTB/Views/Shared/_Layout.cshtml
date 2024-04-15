@@ -93,7 +93,11 @@
                         }
                         else
                         {
-                            <li><a asp-area="Identity" asp-page="/Account/Logout"><i class="fa fa-sign-in"></i> Logout</a></li>
+                            <li>
+                                <form class="form-inline" asp-controller="Account" asp-action="Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                                    <button type="submit" class="nav-link btn btn-link login-button">Logout</button>
+                                </form>
+                            </li>
                         }
                     </ul>
                     <a class='menu-trigger'>
