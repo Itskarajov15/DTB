@@ -3,6 +3,7 @@ using DTB.Infrastructure.Data.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using System.Reflection.Emit;
 
 namespace DTB.Infrastructure.Data
 {
@@ -37,12 +38,24 @@ namespace DTB.Infrastructure.Data
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
+            //builder.Entity<Category>()
+            //    .HasMany(p => p.JobAds)
+            //    .WithOne(c => c.Category)
+            //    .OnDelete(DeleteBehavior.NoAction);
+
+            //builder.Entity<JobAd>()
+            //    .HasOne(p=>p.Company)
+            //    .WithMany(p=>p.JobAds)
+            //    .OnDelete(DeleteBehavior.NoAction);
+
             new CategoryEntityConfiguration().Configure(builder.Entity<Category>());
             new LocationEntityConfiguration().Configure(builder.Entity<Location>());
             new UserRoleEntityConfiguration().Configure(builder.Entity<IdentityRole>());
             new UserEntityConfiguration().Configure(builder.Entity<User>());
             new ArticleEntityConfiguration().Configure(builder.Entity<Article>());
-            new ProfessionEntityConfiguration().Configure(builder.Entity<Profession>()); 
+            new ProfessionEntityConfiguration().Configure(builder.Entity<Profession>());
+            //new CompanyEntityConfiguration().Configure(builder.Entity<Company>());
+            //new JobEntityConfiguration().Configure(builder.Entity<JobAd>());
 
             base.OnModelCreating(builder);
         }
