@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DTB.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240415210537_initial")]
+    [Migration("20240417150806_initial")]
     partial class initial
     {
         /// <inheritdoc />
@@ -74,55 +74,55 @@ namespace DTB.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "a81dcb8b-c525-475e-93bc-84493ad10ee5",
+                            Id = "d3e5db84-5696-48a3-8b04-b256674be601",
                             AuthorId = "cad23a9b-e215-45e8-823f-87207f8c2b71",
                             Content = "In the ever-evolving landscape of recruitment, the integration of technology has proven to be a game-changer. Gone are the days of sifting through stacks of resumes or conducting endless rounds of interviews. Today, forward-thinking companies are embracing innovative technological solutions to streamline their hiring processes and find t he best talent efficiently.\r\nThe Traditional Hiring Conundrum\r\n\r\n\r\n\r\nTraditional recruitment methods often posed significant challenges for both employers and candidates alike. Employers grappled with time-consuming tasks such as manually reviewing resumes, scheduling interviews, and coordinating feedback among hiring teams. On the other hand, candidates faced lengthy application processes and prolonged wait times for responses, leading to frustration and disengagement.\r\nThe Rise of Technological Solutions\r\n\r\n\r\n\r\nATS platforms have become indispensable tools for modern recruiters. These systems automate the process of collecting, sorting, and managing applicant data, allowing recruiters to streamline their workflow and focus on engaging with top candidates. ATS platforms also offer features such as resume parsing, candidate scoring, and automated communication, enabling recruiters to identify the most qualified candidates efficiently.\r\nApplicant Tracking Systems (ATS)\r\n\r\n\r\n\r\nRecognizing the need for a more efficient approach, recruitment professionals turned to technology to revolutionize the hiring process. From applicant tracking systems (ATS) to artificial intelligence (AI)-powered tools, a myriad of solutions emerged to address the pain points of traditional recruitment methods.\r\nAI-Powered Recruitment Tools\r\n\r\n\r\n\r\nArtificial intelligence has transformed the recruitment landscape by offering advanced capabilities for candidate sourcing, screening, and assessment. AI-powered tools leverage machine learning algorithms to analyze vast amounts of data and identify patterns that match candidates with job requirements. These tools can source candidates from various channels, assess their skills and qualifications, and even predict their likelihood of success in specific roles. By harnessing the power of AI, recruiters can significantly reduce time-to-hire, improve candidate quality, and make more data-driven hiring decisions.\r\nVideo Interviewing Platforms\r\n\r\n\r\n\r\nWith the rise of remote work and distributed teams, video interviewing platforms have gained popularity as an essential tool for modern recruitment. These platforms enable recruiters to conduct virtual interviews with candidates from anywhere in the world, eliminating the need for costly and time-consuming travel. Video interviews also offer additional benefits such as asynchronous interviewing, interview recording, and integration with other recruitment software, making the hiring process more efficient and flexible for both recruiters and candidates.\r\nThe Future of Recruitment\r\n\r\n\r\n\r\nAs technology continues to evolve, the future of recruitment holds immense promise for further innovation. Emerging technologies such as augmented reality (AR), virtual reality (VR), and predictive analytics are poised to reshape the recruitment landscape in unprecedented ways. These technologies offer exciting possibilities for immersive candidate experiences, data-driven decision-making, and predictive talent analytics, paving the way for a more efficient, inclusive, and transparent recruitment process.\r\nConclusion\r\n\r\n\r\n\r\nIn the fast-paced world of recruitment, staying ahead of the curve is essential for attracting top talent and driving organizational success. By embracing technology and leveraging innovative solutions, recruiters can revolutionize the hiring process, streamline workflows, and make more informed decisions. As we continue to harness the power of technology, the future of recruitment is brighter than ever, offering boundless opportunities for companies to build diverse, high-performing teams that drive innovation and growth.\r\n\r\n\r\n\r\n\r\nIvan Petrov is a visionary leader in the field of recruitment, with a passion for leveraging technology to drive innovation and efficiency in the hiring process. With years of experience in talent acquisition and human resources, Ivan has witnessed firsthand the challenges faced by both employers and candidates in traditional recruitment methods. Motivated by a desire to revolutionize the industry, Ivan has dedicated his career to exploring and implementing cutting-edge technological solutions that transform the way companies identify and attract top talent.\r\n",
-                            DateOfCreation = new DateTime(2024, 4, 16, 0, 5, 36, 647, DateTimeKind.Local).AddTicks(4230),
+                            DateOfCreation = new DateTime(2024, 4, 17, 18, 8, 5, 842, DateTimeKind.Local).AddTicks(1060),
                             ImageUrl = "https://res.cloudinary.com/dftfu5p0r/image/upload/v1711995437/property-01_mkg5z5.jpg",
                             Title = "Revolutionizing Recruitment: Leveraging Technology To Streamline The Hiring Process"
                         },
                         new
                         {
-                            Id = "2349b11a-589f-4b7a-b84c-e50d194c2ff1",
+                            Id = "ef06c27d-3ca3-4d32-a474-d94b943c324f",
                             AuthorId = "cad23a9b-e215-45e8-823f-87207f8c2b71",
                             Content = "In today's rapidly evolving global landscape, fostering diversity and inclusion (D&I) in the workplace is not just a moral imperative; it's also a strategic advantage. Companies that embrace diversity and inclusion tend to be more innovative, productive, and resilient. However, achieving true diversity and inclusion requires a concerted effort, particularly in the hiring process, where biases can often inadvertently creep in. In this article, we'll explore some best practices for navigating diversity and inclusion in hiring to build a truly inclusive workforce.\r\n1. Foster a Culture of Inclusion from the Top Down:\r\n\r\n\r\n\r\nTLeadership plays a crucial role in shaping organizational culture. It's essential for top executives and managers to actively champion diversity and inclusion initiatives and lead by example. When leaders prioritize D&I efforts, it sends a clear message throughout the organization that diversity is valued and integral to the company's success.\r\n2. Implement Unbiased Hiring Practices:\r\n\r\n\r\n\r\nUnconscious biases can influence hiring decisions, leading to homogeneity rather than diversity in the workforce. To combat this, companies should implement strategies to mitigate bias in the hiring process. This may include using structured interviews, blind resume reviews, diverse hiring panels, and standardized evaluation criteria to ensure that candidates are assessed based on their skills, qualifications, and potential rather than extraneous factors.\r\n3. Expand Outreach and Recruitment Efforts:\r\n\r\n\r\n\r\nTo attract diverse talent pools, companies should broaden their outreach and recruitment efforts. This may involve partnering with organizations that specialize in diverse talent pipelines, attending job fairs and networking events targeted at underrepresented groups, and leveraging social media platforms to reach a diverse audience. Additionally, creating inclusive job descriptions and ensuring that job postings are accessible to all can help attract a more diverse applicant pool.\r\n4. Provide Diversity and Inclusion Training:\r\n\r\n\r\n\r\nOffering training on diversity and inclusion to hiring managers and employees can increase awareness of unconscious biases and promote inclusive behaviors. Training sessions can cover topics such as cultural competency, empathy, inclusive language, and strategies for creating equitable opportunities for all candidates. By investing in education and awareness-building, companies can foster a more inclusive hiring environment.\r\n5. Prioritize Diversity in Talent Acquisition:\r\n\r\n\r\n\r\nMake diversity and inclusion integral components of your talent acquisition strategy. Set specific diversity goals and metrics to track progress over time. Establishing accountability mechanisms and regularly reviewing hiring practices and outcomes can help ensure that diversity and inclusion remain top priorities throughout the recruitment process.\r\n6. Create a Supportive Onboarding Experience:\r\n\r\n\r\n\r\nOnce diverse candidates are hired, it's crucial to provide them with a supportive onboarding experience. This includes offering mentorship programs, affinity groups, and cultural integration initiatives to help new hires feel welcomed and valued within the organization. By fostering a sense of belonging from the outset, companies can improve retention rates and cultivate a more diverse and inclusive workplace culture.\r\nConclusion\r\n\r\n\r\n\r\nBuilding a diverse and inclusive workforce requires a multifaceted approach that starts with the hiring process. By fostering a culture of inclusion, implementing unbiased hiring practices, expanding outreach efforts, providing training, prioritizing diversity in talent acquisition, and creating a supportive onboarding experience, companies can attract and retain diverse talent that drives innovation and success. Embracing diversity and inclusion isn't just the right thing to do—it's also a strategic imperative for building stronger, more resilient organizations in today's interconnected world.\r\n\r\n\r\n\r\n\r\nMaria Dimitrova is a dedicated advocate for diversity and inclusion (D&I) in the workplace, with a passion for fostering inclusive environments where every individual feels valued and empowered to thrive. With a background in human resources and talent management, Maria has extensive experience navigating the complexities of diversity and inclusion in hiring processes and organizational culture.\r\n",
-                            DateOfCreation = new DateTime(2024, 4, 16, 0, 5, 36, 647, DateTimeKind.Local).AddTicks(4241),
+                            DateOfCreation = new DateTime(2024, 4, 17, 18, 8, 5, 842, DateTimeKind.Local).AddTicks(1067),
                             ImageUrl = "https://res.cloudinary.com/dftfu5p0r/image/upload/v1711995437/property-03_ednnld.png",
                             Title = "Navigating Diversity And Inclusion In Hiring: Best Practices For Building An Inclusive Workforce"
                         },
                         new
                         {
-                            Id = "06409423-8302-44df-88e9-ce22e529e72e",
+                            Id = "e9ba7661-d0ad-4b81-8c84-2962d1319622",
                             AuthorId = "cad23a9b-e215-45e8-823f-87207f8c2b71",
                             Content = "In today's competitive job market, finding top talent is more challenging than ever. With companies vying for the same pool of qualified candidates, mastering the art of candidate sourcing has become essential for recruitment success. Effective sourcing strategies not only help in attracting the right candidates but also ensure a streamlined and efficient hiring process. Here are some key strategies to consider when sourcing candidates:\r\n1. Utilize Multiple Sourcing Channels:\r\n\r\n\r\n\r\nGone are the days when job postings on a single platform were sufficient to attract qualified candidates. Today, recruiters must leverage a variety of sourcing channels to reach a diverse pool of talent. This includes job boards, social media platforms, professional networking sites, industry-specific forums, and even employee referrals. By casting a wide net across different channels, recruiters can increase their chances of finding the ideal candidate.\r\n2. Implement Advanced Search Techniques:\r\n\r\n\r\n\r\nWith the abundance of information available online, recruiters can use advanced search techniques to narrow down their candidate search. Boolean search strings, for example, allow recruiters to combine keywords and phrases to find candidates with specific skills and experience. Moreover, utilizing filters and advanced search options on job boards and professional networking sites can further refine the candidate pool based on location, experience level, education, and other criteria.\r\n3. Build and Nurture Talent Pipelines:\r\n\r\n\r\n\r\nBuilding a talent pipeline involves proactively sourcing and engaging with potential candidates, even if there are no immediate job openings. By continuously networking and maintaining relationships with passive candidates, recruiters can create a pool of qualified individuals who can be tapped into when relevant opportunities arise. This not only reduces time-to-hire but also ensures a steady stream of talent for future hiring needs.\r\n4. Develop Employer Branding Initiatives:\r\n\r\n\r\n\r\nA strong employer brand can significantly impact an organization's ability to attract top talent. Therefore, it's essential to invest in employer branding initiatives that showcase the company culture, values, and opportunities for growth. This can include creating engaging content for social media, highlighting employee testimonials and success stories, and actively participating in industry events and networking activities. A positive employer brand not only attracts candidates but also helps in retaining and engaging existing employees.\r\n5. Leverage Technology and Automation:\r\n\r\n\r\n\r\nIn today's digital age, technology plays a crucial role in candidate sourcing and recruitment. Recruiters can leverage Applicant Tracking Systems (ATS), AI-powered sourcing tools, and automation software to streamline the sourcing process, manage candidate pipelines, and analyze data for insights. These technologies not only save time and effort but also enable recruiters to identify and engage with candidates more effectively.\r\n6. Foster Diversity and Inclusion:\r\n\r\n\r\n\r\nDiversity and inclusion should be integral components of any candidate sourcing strategy. Actively seeking out candidates from diverse backgrounds not only enhances creativity and innovation within the organization but also reflects a commitment to creating an inclusive workplace culture. Recruiters should proactively reach out to underrepresented groups, participate in diversity-focused events and initiatives, and ensure that job postings are inclusive and free from bias.\r\n7. Measure and Optimize Performance:\r\n\r\n\r\n\r\nContinuous improvement is key to success in candidate sourcing. Recruiters should regularly monitor and measure the performance of their sourcing efforts, analyzing metrics such as time-to-fill, cost-per-hire, and quality-of-hire. By identifying areas for improvement and optimizing sourcing strategies based on data-driven insights, recruiters can enhance their effectiveness and achieve better recruitment outcomes over time.\r\nConclusion\r\n\r\n\r\n\r\nIn conclusion, mastering the art of candidate sourcing requires a combination of creativity, strategic thinking, and leveraging the right tools and techniques. By adopting a multi-channel approach, utilizing advanced search techniques, building talent pipelines, investing in employer branding, leveraging technology, fostering diversity and inclusion, and continuously measuring and optimizing performance, recruiters can enhance their recruitment success and attract top alent to their organizations.\r\n\r\n\r\n\r\n\r\nGeorgi Ivanov is a seasoned HR professional with over a decade of experience in talent acquisition and recruitment strategy. He is passionate about helping organizations build high-performing teams through effective sourcing and talent management practices.\r\n",
-                            DateOfCreation = new DateTime(2024, 4, 16, 0, 5, 36, 647, DateTimeKind.Local).AddTicks(4251),
+                            DateOfCreation = new DateTime(2024, 4, 17, 18, 8, 5, 842, DateTimeKind.Local).AddTicks(1073),
                             ImageUrl = "https://res.cloudinary.com/dftfu5p0r/image/upload/v1711995437/property-06_fkugqv.png",
                             Title = "Mastering The Art Of Candidate Sourcing: Effective Strategies For Recruitment Success"
                         },
                         new
                         {
-                            Id = "29ed6c51-2eed-49f3-a0df-a8849eeaf340",
+                            Id = "6216dc15-4e99-4aed-bd09-f86c074806a3",
                             AuthorId = "cad23a9b-e215-45e8-823f-87207f8c2b71",
                             Content = "In the dynamic landscape of today's job market, success isn't just about possessing the right qualifications or technical skills; it's about embodying a unique set of traits that set top performers apart from the rest. Whether you're a seasoned professional or a recent graduate, understanding and cultivating these essential traits can be the key to unlocking your full potential and achieving success in your career. Let's explore some of the fundamental traits that top performers exhibit in today's competitive job market.\r\n1. Adaptability and Resilience:\r\n\r\n\r\n\r\nIn a rapidly evolving work environment, adaptability is paramount. Top performers demonstrate the ability to quickly adjust to changes, whether it's new technology, shifting priorities, or unforeseen challenges. They approach setbacks as opportunities for growth and bounce back from adversity with resilience, maintaining a positive attitude and a forward-thinking mindset.\r\n2. Continuous Learning and Growth:\r\n\r\n\r\n\r\nThe pursuit of knowledge and personal development is a hallmark of top performers. They understand that learning doesn't end with formal education but is an ongoing process. Whether through formal training programs, self-study, or seeking mentorship, they are committed to expanding their skills and expertise to stay ahead of the curve in their respective fields.\r\n3. Strong Communication Skills:\r\n\r\n\r\n\r\nEffective communication is essential for success in any role. Top performers excel not only in articulating their ideas clearly but also in listening actively and empathetically. They can communicate across various mediums and tailor their message to different audiences, fostering collaboration and building strong relationships with colleagues, clients, and stakeholders.\r\n4. Proactive Problem-Solving Abilities:\r\n\r\n\r\n\r\nTop performers possess strong problem-solving skills and a proactive approach to tackling challenges. Rather than waiting for problems to arise, they anticipate potential issues and take preemptive action to address them. They analyze situations critically, think creatively, and implement innovative solutions, demonstrating resourcefulness and initiative in their work.\r\n5. Emotional Intelligence and Empathy:\r\n\r\n\r\n\r\nEmotional intelligence, including self-awareness, self-regulation, social awareness, and relationship management, is a critical trait of top performers. They understand their own emotions and motivations, allowing them to navigate complex interpersonal dynamics effectively. Moreover, they demonstrate empathy and understanding towards others, fostering a positive work environment and building trust and rapport with colleagues.\r\n6. Goal-Oriented and Results-Driven:\r\n\r\n\r\n\r\nTop performers are driven by a strong sense of purpose and are laser-focused on achieving their goals. They set ambitious yet achievable objectives, develop actionable plans to attain them, and consistently track their progress. They are outcome-oriented, measuring success not only by their individual achievements but also by their contributions to the overall success of their team and organization.\r\n7. Adaptability to Remote Work and Digital Skills:\r\n\r\n\r\n\r\nIn the wake of the COVID-19 pandemic, remote work has become increasingly prevalent. Top performers exhibit adaptability to this new work model, leveraging technology to collaborate effectively, stay organized, and maintain productivity. They are proficient in digital tools and platforms relevant to their roles, allowing them to thrive in virtual environments and stay connected with their teams and clients.\r\nConclusion\r\n\r\n\r\n\r\nIn conclusion, success in today's job market requires more than just technical expertise; it demands a diverse range of essential traits that enable individuals to navigate challenges, seize opportunities, and excel in their careers. By cultivating adaptability, continuous learning, strong communication, proactive problem-solving, emotional intelligence, goal orientation, and adaptability to remote work, individuals can position themselves as top performers in their respective fields, unlocking their full potential and achieving lasting success in today's dynamic work landscape.\r\n\r\n\r\n\r\n\r\nDimitar Genov is a seasoned professional with extensive experience in talent development and organizational leadership. He is passionate about empowering individuals to unleash their full potential and thrive in today's competitive job market.\r\n",
-                            DateOfCreation = new DateTime(2024, 4, 16, 0, 5, 36, 647, DateTimeKind.Local).AddTicks(4261),
+                            DateOfCreation = new DateTime(2024, 4, 17, 18, 8, 5, 842, DateTimeKind.Local).AddTicks(1078),
                             ImageUrl = "https://res.cloudinary.com/dftfu5p0r/image/upload/v1711995451/unlockingsuccess_nhuhe2.jpg",
                             Title = "Unlocking Success: The Essential Traits Of Top Performers In Today's Job Market\r\n"
                         },
                         new
                         {
-                            Id = "7e6d9619-35a1-438e-a67e-bff6289139ac",
+                            Id = "56244357-a6b0-46ba-ab93-3b236b653219",
                             AuthorId = "cad23a9b-e215-45e8-823f-87207f8c2b71",
                             Content = "In the wake of the COVID-19 pandemic, the traditional office-centric model of work has undergone a seismic shift. Remote work has become the new norm for many organizations, accelerating the adoption of digital technologies and fundamentally reshaping the way we approach talent acquisition. In this article, we'll explore strategies for navigating the digital talent landscape and effectively hiring in a remote-first world.:\r\nEmbrace Remote Work as the New Reality::\r\n\r\n\r\n\r\nThe first step in adapting to the remote-first world is to embrace it as the new reality. Recognize that remote work offers numerous benefits, including access to a broader talent pool, increased flexibility for employees, and reduced overhead costs for organizations. By embracing remote work, companies can tap into a diverse range of talent from around the globe and leverage digital tools to facilitate seamless collaboration across distributed teams.\r\nLeverage Digital Platforms for Recruitment:\r\n\r\n\r\n\r\nIn a remote-first world, traditional recruitment methods such as in-person interviews and job fairs may no longer be feasible. Instead, organizations must leverage digital platforms and technologies to connect with and attract top talent. This may include utilizing online job boards, social media platforms, and professional networking sites to advertise job openings and engage with potential candidates. Additionally, consider leveraging video interviewing platforms and virtual recruitment events to conduct remote interviews and assess candidates' skills and fit for the role.\r\nPrioritize Communication and Collaboration:\r\n\r\n\r\n\r\nEffective communication and collaboration are essential for success in a remote work environment. When hiring for remote positions, prioritize candidates who demonstrate strong communication skills, self-motivation, and the ability to work independently. Additionally, ensure that your organization has robust communication tools and practices in place to facilitate seamless collaboration among remote teams. This may include utilizing messaging apps, video conferencing software, and project management tools to keep teams connected and aligned.\r\nFocus on Results and Outcomes:\r\n\r\n\r\n\r\nIn a remote-first world, it's essential to focus on results and outcomes rather than hours worked or physical presence. When evaluating candidates, prioritize those who have a track record of delivering results in a remote or distributed work environment. Look for candidates who are self-directed, results-oriented, and able to thrive in a virtual setting. Additionally, consider implementing performance metrics and goals that emphasize outcomes rather than activities, empowering employees to focus on achieving measurable results regardless of their physical location.\r\nProvide Support and Resources for Remote Employees:\r\n\r\n\r\n\r\nRemote work can present unique challenges for employees, including feelings of isolation, difficulty maintaining work-life balance, and technological barriers. To support remote employees and ensure their success, provide access to resources and support services tailored to their needs. This may include offering remote onboarding and training programs, providing access to remote work tools and technology, and fostering a culture of inclusivity and support for remote employees.\r\nConclusion\r\n\r\n\r\n\r\nINavigating the digital talent landscape requires a shift in mindset and approach to hiring in a remote-first world. By embracing remote work as the new reality, leveraging digital platforms for recruitment, prioritizing communication and collaboration, focusing on results and outcomes, and providing support and resources for remote employees, organizations can effectively navigate the challenges and opportunities of hiring in a remote-first world. By embracing these strategies, companies can build diverse, high-performing teams that drive innovation and success in the digital age.\r\n\r\n\r\n\r\n\r\nMilena Koleva is a seasoned HR professional with a passion for talent acquisition and organizational development. With a focus on leveraging digital technologies and remote work strategies, Milena helps organizations navigate the complexities of hiring in a remote-first world. Through her expertise and dedication, Milena empowers companies to build diverse, resilient teams that thrive in today's digital landscape.\r\n",
-                            DateOfCreation = new DateTime(2024, 4, 16, 0, 5, 36, 647, DateTimeKind.Local).AddTicks(4271),
+                            DateOfCreation = new DateTime(2024, 4, 17, 18, 8, 5, 842, DateTimeKind.Local).AddTicks(1084),
                             ImageUrl = "https://res.cloudinary.com/dftfu5p0r/image/upload/v1711995437/remoteworking_o1rphp.jpg",
                             Title = "Navigating The Digital Talent Landscape: Strategies For Hiring In A Remote-First World"
                         },
                         new
                         {
-                            Id = "a7b0446e-ce93-4b85-ae2c-1592f0431c28",
+                            Id = "3c589efc-ae59-439f-93f6-29f162d04e1c",
                             AuthorId = "cad23a9b-e215-45e8-823f-87207f8c2b71",
                             Content = "In the dynamic landscape of modern workplaces, diversity and inclusion (D&I) have emerged as critical components of organizational success. Beyond just fulfilling ethical obligations, companies that prioritize D&I enjoy a myriad of benefits, including enhanced innovation, stronger employee engagement, and improved financial performance. However, achieving a truly diverse and inclusive workforce requires deliberate efforts at every stage of the employee lifecycle, from recruitment to retention. In this article, we'll explore some best practices for both recruitment and retention that can help organizations build and maintain a diverse and inclusive workforce.\r\nRecruitment Best Practices:\r\n\r\n\r\n\r\n1. Expand Outreach Efforts: To attract a diverse pool of candidates, it's crucial to broaden recruitment efforts beyond traditional channels. This may involve collaborating with diversity-focused organizations, attending events tailored to underrepresented groups, and utilizing targeted advertising on social media platforms. By proactively seeking out diverse talent, organizations can ensure a more inclusive recruitment process.\r\n2. Review Job Descriptions: Job descriptions should be crafted with inclusivity in mind. Avoid using biased language or requirements that may unintentionally deter certain candidates. Focus on the essential skills and qualifications needed for the role, rather than unnecessary criteria that may exclude qualified candidates from diverse backgrounds.\r\n3.Implement Blind Screening: Unconscious biases can influence hiring decisions, even unintentionally. Implementing blind screening processes, where personal information such as name, gender, and ethnicity is removed from resumes during the initial review, can help mitigate bias and ensure fair evaluation based solely on qualifications and experience.\r\n4. Diverse Interview Panels: Including diverse perspectives in the interview process is essential for promoting inclusivity. Consider assembling interview panels that reflect the diversity of your workforce and the broader community. This can help mitigate biases and ensure that candidates are evaluated fairly.\r\nRetention Best Practices:\r\n\r\n\r\n\r\n1. Promote Inclusive Culture: Creating a culture of inclusivity starts from the top. Leaders should actively champion D&I initiatives and foster an environment where all employees feel valued and respected. Encourage open dialogue, celebrate diversity, and address any instances of discrimination or bias promptly and effectively.\r\n2. Offer Development Opportunities: Provide opportunities for professional development and career advancement for all employees. Offer mentorship programs, training workshops, and leadership development initiatives that support the growth and progression of diverse talent within the organization.\r\n3.Establish Support Networks: Employee resource groups (ERGs) can provide a valuable support network for employees from underrepresented backgrounds. Encourage the formation of ERGs based on common identities or interests and provide resources and support to help them thrive.\r\n4. Regularly Review Policies: Periodically review HR policies and practices to ensure they are inclusive and equitable. Solicit feedback from employees and make necessary adjustments to address any gaps or areas for improvement.\r\nConclusion\r\n\r\n\r\n\r\nBuilding a diverse and inclusive workforce is not only the right thing to do—it's also a strategic imperative for organizations seeking to thrive in today's global marketplace. By implementing best practices for recruitment and retention, organizations can create environments where every individual feels valued, respected, and empowered to contribute their unique perspectives and talents. Through intentional efforts and proactive strategies, we can build a more equitable and inclusive future where diversity is celebrated and embraced as a source of strength and innovation.\r\n\r\n\r\n\r\n\r\nNikolai Ivanov is a seasoned HR professional with a deep commitment to building diverse and inclusive workplaces. With a wealth of experience in recruitment, talent development, and organizational culture, Nikolai understands the importance of creating environments where every individual feels valued, respected, and empowered to contribute their unique perspectives and talents.\r\n",
-                            DateOfCreation = new DateTime(2024, 4, 16, 0, 5, 36, 647, DateTimeKind.Local).AddTicks(4281),
+                            DateOfCreation = new DateTime(2024, 4, 17, 18, 8, 5, 842, DateTimeKind.Local).AddTicks(1091),
                             ImageUrl = "https://res.cloudinary.com/dftfu5p0r/image/upload/v1711995700/article6_yhytju.jpg",
                             Title = "Building A Diverse And Inclusive Workforce: Best Practices For Recruitment And Retention"
                         });
@@ -238,168 +238,168 @@ namespace DTB.Infrastructure.Migrations
                         new
                         {
                             Id = "80bb3283-c810-4b9c-9d42-da03e17b2ddf",
-                            DateOfCreation = new DateTime(2024, 4, 16, 0, 5, 36, 647, DateTimeKind.Local).AddTicks(3312),
+                            DateOfCreation = new DateTime(2024, 4, 17, 18, 8, 5, 842, DateTimeKind.Local).AddTicks(626),
                             Name = "Architecture, Construction",
                             PictureUrl = "https://res.cloudinary.com/dftfu5p0r/image/upload/v1709824820/icon_architecture_gqdlbl.png"
                         },
                         new
                         {
                             Id = "a732a432-ef4f-4407-9dba-71f904d0ea6e",
-                            DateOfCreation = new DateTime(2024, 4, 16, 0, 5, 36, 647, DateTimeKind.Local).AddTicks(3382),
+                            DateOfCreation = new DateTime(2024, 4, 17, 18, 8, 5, 842, DateTimeKind.Local).AddTicks(669),
                             Name = "Health and Pharmacy",
                             PictureUrl = "https://res.cloudinary.com/dftfu5p0r/image/upload/v1709824820/icon_health_nhktmm.png"
                         },
                         new
                         {
                             Id = "b89927d7-b1fd-4703-98df-a4681ce2db88",
-                            DateOfCreation = new DateTime(2024, 4, 16, 0, 5, 36, 647, DateTimeKind.Local).AddTicks(3387),
+                            DateOfCreation = new DateTime(2024, 4, 17, 18, 8, 5, 842, DateTimeKind.Local).AddTicks(671),
                             Name = "Drivers, Couriers",
                             PictureUrl = "https://res.cloudinary.com/dftfu5p0r/image/upload/v1709824821/icon_derivers_q8g7p3.png"
                         },
                         new
                         {
                             Id = "07a32cf2-3c7a-4ab0-ab70-9952c0966f30",
-                            DateOfCreation = new DateTime(2024, 4, 16, 0, 5, 36, 647, DateTimeKind.Local).AddTicks(3391),
+                            DateOfCreation = new DateTime(2024, 4, 17, 18, 8, 5, 842, DateTimeKind.Local).AddTicks(673),
                             Name = "Restaurants, Bars, Hotels, Tourism",
                             PictureUrl = "https://res.cloudinary.com/dftfu5p0r/image/upload/v1709824823/icon_restaurant_ee4ubg.png"
                         },
                         new
                         {
                             Id = "38b5eb73-7829-497b-a207-9bcf3fef3b1b",
-                            DateOfCreation = new DateTime(2024, 4, 16, 0, 5, 36, 647, DateTimeKind.Local).AddTicks(3394),
+                            DateOfCreation = new DateTime(2024, 4, 17, 18, 8, 5, 842, DateTimeKind.Local).AddTicks(675),
                             Name = "Engineers and Technicians",
                             PictureUrl = "https://res.cloudinary.com/dftfu5p0r/image/upload/v1709824820/icon_engineer_wzjia1.png"
                         },
                         new
                         {
                             Id = "438c1389-c017-43b8-a34a-46b8c64f5e1d",
-                            DateOfCreation = new DateTime(2024, 4, 16, 0, 5, 36, 647, DateTimeKind.Local).AddTicks(3405),
+                            DateOfCreation = new DateTime(2024, 4, 17, 18, 8, 5, 842, DateTimeKind.Local).AddTicks(679),
                             Name = "Human Resources",
                             PictureUrl = "https://res.cloudinary.com/dftfu5p0r/image/upload/v1709824820/icon_hr_jbc5jn.png"
                         },
                         new
                         {
                             Id = "3c1fda93-5ef8-4db2-97f7-25f163fbca67",
-                            DateOfCreation = new DateTime(2024, 4, 16, 0, 5, 36, 647, DateTimeKind.Local).AddTicks(3408),
+                            DateOfCreation = new DateTime(2024, 4, 17, 18, 8, 5, 842, DateTimeKind.Local).AddTicks(681),
                             Name = "Media, Publishing",
                             PictureUrl = "https://res.cloudinary.com/dftfu5p0r/image/upload/v1709824821/icon_media_mpzkez.png"
                         },
                         new
                         {
                             Id = "c4dd9eea-1569-402f-a5b8-8473f48437a1",
-                            DateOfCreation = new DateTime(2024, 4, 16, 0, 5, 36, 647, DateTimeKind.Local).AddTicks(3411),
+                            DateOfCreation = new DateTime(2024, 4, 17, 18, 8, 5, 842, DateTimeKind.Local).AddTicks(683),
                             Name = "Logistics, Spedition",
                             PictureUrl = "https://res.cloudinary.com/dftfu5p0r/image/upload/v1709824821/icon_logistic_ktvoqa.png"
                         },
                         new
                         {
                             Id = "c468efd1-09cf-4e6c-9245-2e837e500968",
-                            DateOfCreation = new DateTime(2024, 4, 16, 0, 5, 36, 647, DateTimeKind.Local).AddTicks(3415),
+                            DateOfCreation = new DateTime(2024, 4, 17, 18, 8, 5, 842, DateTimeKind.Local).AddTicks(684),
                             Name = "Customer support",
                             PictureUrl = "https://res.cloudinary.com/dftfu5p0r/image/upload/v1709824820/icon_customersupport_fbvie5.png"
                         },
                         new
                         {
                             Id = "ff13d479-760d-4387-8843-c882ad150609",
-                            DateOfCreation = new DateTime(2024, 4, 16, 0, 5, 36, 647, DateTimeKind.Local).AddTicks(3420),
+                            DateOfCreation = new DateTime(2024, 4, 17, 18, 8, 5, 842, DateTimeKind.Local).AddTicks(687),
                             Name = "Banking, Lending, Insurance",
                             PictureUrl = "https://res.cloudinary.com/dftfu5p0r/image/upload/v1709824820/icon_banking_dkgjma.png"
                         },
                         new
                         {
                             Id = "bdb3c38b-bc2f-48d3-a2f6-56f74573cecb",
-                            DateOfCreation = new DateTime(2024, 4, 16, 0, 5, 36, 647, DateTimeKind.Local).AddTicks(3424),
+                            DateOfCreation = new DateTime(2024, 4, 17, 18, 8, 5, 842, DateTimeKind.Local).AddTicks(689),
                             Name = "Marketing, Advertising, PR",
                             PictureUrl = "https://res.cloudinary.com/dftfu5p0r/image/upload/v1709824820/icon_hr_jbc5jn.png"
                         },
                         new
                         {
                             Id = "71eb6b38-7552-425e-bf09-ee22d23855bb",
-                            DateOfCreation = new DateTime(2024, 4, 16, 0, 5, 36, 647, DateTimeKind.Local).AddTicks(3427),
+                            DateOfCreation = new DateTime(2024, 4, 17, 18, 8, 5, 842, DateTimeKind.Local).AddTicks(690),
                             Name = "Office and Business activities",
                             PictureUrl = "https://res.cloudinary.com/dftfu5p0r/image/upload/v1709824821/icon_office_xkdjih.png"
                         },
                         new
                         {
                             Id = "f239ac3f-856e-494c-95df-2521a3269a6b",
-                            DateOfCreation = new DateTime(2024, 4, 16, 0, 5, 36, 647, DateTimeKind.Local).AddTicks(3429),
+                            DateOfCreation = new DateTime(2024, 4, 17, 18, 8, 5, 842, DateTimeKind.Local).AddTicks(692),
                             Name = "Energy, Water and Sewage, Utilities",
                             PictureUrl = "https://res.cloudinary.com/dftfu5p0r/image/upload/v1709824820/icon_energy_kznsrc.png"
                         },
                         new
                         {
                             Id = "3ea25504-1598-4608-a362-84d82b1b2fce",
-                            DateOfCreation = new DateTime(2024, 4, 16, 0, 5, 36, 647, DateTimeKind.Local).AddTicks(3432),
+                            DateOfCreation = new DateTime(2024, 4, 17, 18, 8, 5, 842, DateTimeKind.Local).AddTicks(693),
                             Name = "Telecommunications - engineers and technicians",
                             PictureUrl = "https://res.cloudinary.com/dftfu5p0r/image/upload/v1709824825/icon_telecoms_sbsq5u.png"
                         },
                         new
                         {
                             Id = "16bf1012-a018-453d-97f2-d9682a3588f1",
-                            DateOfCreation = new DateTime(2024, 4, 16, 0, 5, 36, 647, DateTimeKind.Local).AddTicks(3435),
+                            DateOfCreation = new DateTime(2024, 4, 17, 18, 8, 5, 842, DateTimeKind.Local).AddTicks(695),
                             Name = "Education, Courses, Translators",
                             PictureUrl = "https://res.cloudinary.com/dftfu5p0r/image/upload/v1709824821/icon_education_kdsm7z.png"
                         },
                         new
                         {
                             Id = "8910967e-2a14-4a1a-a3f5-d16cc78a4b32",
-                            DateOfCreation = new DateTime(2024, 4, 16, 0, 5, 36, 647, DateTimeKind.Local).AddTicks(3438),
+                            DateOfCreation = new DateTime(2024, 4, 17, 18, 8, 5, 842, DateTimeKind.Local).AddTicks(697),
                             Name = "Security",
                             PictureUrl = "https://res.cloudinary.com/dftfu5p0r/image/upload/v1709824825/icon_security_c4fjq0.png"
                         },
                         new
                         {
                             Id = "0676aec9-89f5-4511-b642-6d0fe86e404a",
-                            DateOfCreation = new DateTime(2024, 4, 16, 0, 5, 36, 647, DateTimeKind.Local).AddTicks(3441),
+                            DateOfCreation = new DateTime(2024, 4, 17, 18, 8, 5, 842, DateTimeKind.Local).AddTicks(698),
                             Name = "Real-estate",
                             PictureUrl = "https://res.cloudinary.com/dftfu5p0r/image/upload/v1709824821/icon_realestate_dkhhfe.png"
                         },
                         new
                         {
                             Id = "ec4b3c64-1f2f-455d-a6e4-75b525625371",
-                            DateOfCreation = new DateTime(2024, 4, 16, 0, 5, 36, 647, DateTimeKind.Local).AddTicks(3445),
+                            DateOfCreation = new DateTime(2024, 4, 17, 18, 8, 5, 842, DateTimeKind.Local).AddTicks(701),
                             Name = "Legal",
                             PictureUrl = "https://res.cloudinary.com/dftfu5p0r/image/upload/v1709824821/icon_legal_ofzofx.png"
                         },
                         new
                         {
                             Id = "18aee4dd-17bc-4fe9-8d8d-18ed13a9138c",
-                            DateOfCreation = new DateTime(2024, 4, 16, 0, 5, 36, 647, DateTimeKind.Local).AddTicks(3448),
+                            DateOfCreation = new DateTime(2024, 4, 17, 18, 8, 5, 842, DateTimeKind.Local).AddTicks(702),
                             Name = "Aviation, Airport & Airline",
                             PictureUrl = "https://res.cloudinary.com/dftfu5p0r/image/upload/v1709824820/icon_airline_bgvmiu.png"
                         },
                         new
                         {
                             Id = "221e3547-3c78-41f9-9634-d7571a615fb8",
-                            DateOfCreation = new DateTime(2024, 4, 16, 0, 5, 36, 647, DateTimeKind.Local).AddTicks(3451),
+                            DateOfCreation = new DateTime(2024, 4, 17, 18, 8, 5, 842, DateTimeKind.Local).AddTicks(704),
                             Name = "Auto Service",
                             PictureUrl = "https://res.cloudinary.com/dftfu5p0r/image/upload/v1709824819/icon_autoservice_iabxkj.png"
                         },
                         new
                         {
                             Id = "265bc199-91e3-4eba-9886-bce0a19e6ce2",
-                            DateOfCreation = new DateTime(2024, 4, 16, 0, 5, 36, 647, DateTimeKind.Local).AddTicks(3454),
+                            DateOfCreation = new DateTime(2024, 4, 17, 18, 8, 5, 842, DateTimeKind.Local).AddTicks(706),
                             Name = "Retail, Wholesale",
                             PictureUrl = "https://res.cloudinary.com/dftfu5p0r/image/upload/v1709824824/icon_retail_pgicm9.png"
                         },
                         new
                         {
                             Id = "fd71ecf5-cb6d-4e3c-ad4e-84358bdfa328",
-                            DateOfCreation = new DateTime(2024, 4, 16, 0, 5, 36, 647, DateTimeKind.Local).AddTicks(3457),
+                            DateOfCreation = new DateTime(2024, 4, 17, 18, 8, 5, 842, DateTimeKind.Local).AddTicks(707),
                             Name = "Technical Support",
                             PictureUrl = "https://res.cloudinary.com/dftfu5p0r/image/upload/v1709824825/icon_techsupport_zph0mx.png"
                         },
                         new
                         {
                             Id = "6859c0a0-98d0-49c5-b017-17d2a64d3342",
-                            DateOfCreation = new DateTime(2024, 4, 16, 0, 5, 36, 647, DateTimeKind.Local).AddTicks(3460),
+                            DateOfCreation = new DateTime(2024, 4, 17, 18, 8, 5, 842, DateTimeKind.Local).AddTicks(723),
                             Name = "Research and development",
                             PictureUrl = "https://res.cloudinary.com/dftfu5p0r/image/upload/v1709824822/icon_research_mdrafi.png"
                         },
                         new
                         {
                             Id = "dc8214a6-79cf-436c-bae1-7387b82a3bce",
-                            DateOfCreation = new DateTime(2024, 4, 16, 0, 5, 36, 647, DateTimeKind.Local).AddTicks(3462),
+                            DateOfCreation = new DateTime(2024, 4, 17, 18, 8, 5, 842, DateTimeKind.Local).AddTicks(725),
                             Name = "Accouting, Audit, Finance",
                             PictureUrl = "https://res.cloudinary.com/dftfu5p0r/image/upload/v1709824820/icon_finance_r5bftt.png"
                         });
@@ -543,52 +543,52 @@ namespace DTB.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "cad1dfd9-c7da-47bd-905a-8a03646e8809",
+                            Id = "9b51ab5b-59a6-4e02-b883-27e2085e5ad3",
                             Name = "Sofia"
                         },
                         new
                         {
-                            Id = "012bd457-ba34-4515-b938-0bfd8169054f",
+                            Id = "f83622f2-b418-4a1a-9dcb-24d0e79c9b7b",
                             Name = "Burgas"
                         },
                         new
                         {
-                            Id = "0ed63908-13f4-48e3-8f0f-852e4fd9959b",
+                            Id = "271f8045-12b1-4042-b930-d95cb98b687d",
                             Name = "Plovdiv"
                         },
                         new
                         {
-                            Id = "30662405-2acc-4f02-aef5-0999696ce061",
+                            Id = "fdcd7e7e-eb16-4ef3-bfbf-164340f6a0d3",
                             Name = "Varna"
                         },
                         new
                         {
-                            Id = "8da1107c-3695-49b6-bbd4-d394ed154b57",
+                            Id = "bedffed3-610d-4b60-8ac4-b35bc1707f4f",
                             Name = "Yambol"
                         },
                         new
                         {
-                            Id = "a39e2b5a-260a-4432-b84f-e9831bec567b",
+                            Id = "0212d51d-5cc7-41c6-91b4-8b7237882442",
                             Name = "Blagoevgrad"
                         },
                         new
                         {
-                            Id = "ee9682df-bc29-428f-98f4-6388b8a5ffb1",
+                            Id = "be267067-1415-4d9c-9d45-ef62b1588c58",
                             Name = "Sliven"
                         },
                         new
                         {
-                            Id = "beacc94c-4d40-4147-a2d6-6b6800efa8f6",
+                            Id = "1dbfe0e6-d4cb-46e8-a6cc-0a0c1f60f6de",
                             Name = "Dimitrovgrad"
                         },
                         new
                         {
-                            Id = "7048b303-6fcc-4fb7-b4d9-8114383246a9",
+                            Id = "79f47c1b-0975-42e7-8b94-12e3e3bbd319",
                             Name = "Ruse"
                         },
                         new
                         {
-                            Id = "57538c25-de61-42b1-83a7-a5b88d762433",
+                            Id = "2dafea3b-3d3a-46da-a2d4-3a1ad7ab953a",
                             Name = "Elhovo"
                         });
                 });
@@ -646,847 +646,847 @@ namespace DTB.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "74ba1775-6bbb-49dd-99c8-653e7dd3bd76",
+                            Id = "f04259e9-3cf1-4c45-897d-f6c1e6c3df61",
                             CategoryId = "80bb3283-c810-4b9c-9d42-da03e17b2ddf",
                             Name = "Architect"
                         },
                         new
                         {
-                            Id = "696d0bd8-e510-4c5d-ae35-78cad1181a8f",
+                            Id = "8ef0979d-2b57-49c2-aa41-7582fd88161c",
                             CategoryId = "80bb3283-c810-4b9c-9d42-da03e17b2ddf",
                             Name = "Urban Planner"
                         },
                         new
                         {
-                            Id = "641c6252-64f1-4561-97bc-7a3fb6d6e402",
+                            Id = "bd3a10e8-8835-4dd9-9168-9f935c9a1b85",
                             CategoryId = "80bb3283-c810-4b9c-9d42-da03e17b2ddf",
                             Name = "Landscape Architect"
                         },
                         new
                         {
-                            Id = "fa8d8eef-7f87-47bd-affe-b8ef8ae2efd9",
+                            Id = "d2f9bca5-e3d8-41a4-8179-58d960850c21",
                             CategoryId = "80bb3283-c810-4b9c-9d42-da03e17b2ddf",
                             Name = "Interior Designer"
                         },
                         new
                         {
-                            Id = "02be3e7a-3beb-4f1f-a23c-05a6282e0f0b",
+                            Id = "77f2a9d9-3c90-4439-bf2a-38f326a731c4",
                             CategoryId = "a732a432-ef4f-4407-9dba-71f904d0ea6e",
                             Name = "Pharmacist"
                         },
                         new
                         {
-                            Id = "b3650ac4-b942-4e60-bf67-9c7d8b8dada9",
+                            Id = "af0a0565-51c2-4969-9757-937d0cc8f35e",
                             CategoryId = "a732a432-ef4f-4407-9dba-71f904d0ea6e",
                             Name = "Doctor"
                         },
                         new
                         {
-                            Id = "2c22f787-d93d-4030-930d-22668c929278",
+                            Id = "53242ed3-c78e-4fa9-ae5c-d880c8e506b2",
                             CategoryId = "a732a432-ef4f-4407-9dba-71f904d0ea6e",
                             Name = "Nurse"
                         },
                         new
                         {
-                            Id = "e846f3fd-3a83-49bc-a8ab-00de75daff1a",
+                            Id = "59dc7d4a-52d0-4ebd-80fc-59dbb5f05b4f",
                             CategoryId = "a732a432-ef4f-4407-9dba-71f904d0ea6e",
                             Name = "Pharmacy Technician"
                         },
                         new
                         {
-                            Id = "a44a38a3-3a98-4b41-9fb4-d2a8c3f2ebc9",
+                            Id = "0c6c6421-2a35-4c70-b8a1-14eef62286ee",
                             CategoryId = "a732a432-ef4f-4407-9dba-71f904d0ea6e",
                             Name = "Pharmaceutical Scientist"
                         },
                         new
                         {
-                            Id = "6625559f-54ab-47be-a715-5bdf682b1b9e",
+                            Id = "a61fcb21-3ed7-4392-a0aa-6741862c65d3",
                             CategoryId = "a732a432-ef4f-4407-9dba-71f904d0ea6e",
                             Name = "Clinical Research Associate"
                         },
                         new
                         {
-                            Id = "b0fb83ea-722d-43be-8263-82af00b1dc65",
+                            Id = "f446f50a-7021-4d5a-9fc7-d59dcfe54f6e",
                             CategoryId = "b89927d7-b1fd-4703-98df-a4681ce2db88",
                             Name = "Delivery Driver"
                         },
                         new
                         {
-                            Id = "26548567-f97e-4505-a163-bbc6942262be",
+                            Id = "b66e4d92-5c30-48b0-92ac-f4b0fe2879e2",
                             CategoryId = "b89927d7-b1fd-4703-98df-a4681ce2db88",
                             Name = "Courier"
                         },
                         new
                         {
-                            Id = "1f42365e-ce27-4e00-a8dc-2d669e4f20b6",
+                            Id = "d0494fe0-06f8-4f01-81fd-937df723d203",
                             CategoryId = "b89927d7-b1fd-4703-98df-a4681ce2db88",
                             Name = "Truck Driver"
                         },
                         new
                         {
-                            Id = "048e727e-0ad6-400d-bc79-5579d454db38",
+                            Id = "c4a3549f-2dd3-48e3-bd41-43d101baa24e",
                             CategoryId = "b89927d7-b1fd-4703-98df-a4681ce2db88",
                             Name = "Taxi Driver"
                         },
                         new
                         {
-                            Id = "a4a68e54-d607-45b0-8aed-e6bb47ed1dac",
+                            Id = "73de6a98-fc71-4144-8154-20778c34e93b",
                             CategoryId = "b89927d7-b1fd-4703-98df-a4681ce2db88",
                             Name = "Bus Driver"
                         },
                         new
                         {
-                            Id = "14dd7001-d9b2-4db4-8d07-8661f6035dfe",
+                            Id = "4c87148f-52c8-45d6-801e-6663bc2b9615",
                             CategoryId = "b89927d7-b1fd-4703-98df-a4681ce2db88",
                             Name = "Van Driver"
                         },
                         new
                         {
-                            Id = "cdbe3f5b-09f3-48d9-baa9-c94ec3e4cfee",
+                            Id = "fda9d7e2-471f-4b5a-8ad7-0e849cbb7f6c",
                             CategoryId = "07a32cf2-3c7a-4ab0-ab70-9952c0966f30",
                             Name = "Chef"
                         },
                         new
                         {
-                            Id = "1d42484d-55d2-4c8c-977e-e58ae6e7ee3c",
+                            Id = "28c92c7c-f39f-47a3-b79d-b6e0a9f08e88",
                             CategoryId = "07a32cf2-3c7a-4ab0-ab70-9952c0966f30",
                             Name = "Bartender"
                         },
                         new
                         {
-                            Id = "356615be-6a3f-4de1-9d4e-a3b2cdca8080",
+                            Id = "db083e3f-67a2-4c92-92d6-8b6e1dfdc48e",
                             CategoryId = "07a32cf2-3c7a-4ab0-ab70-9952c0966f30",
                             Name = "Waiter/Waitress"
                         },
                         new
                         {
-                            Id = "6c77266f-f45e-48c2-b360-c08a87a8bb6a",
+                            Id = "5e8f79b5-c176-4a85-86a5-3998adcc6822",
                             CategoryId = "07a32cf2-3c7a-4ab0-ab70-9952c0966f30",
                             Name = "Restaurant Manager"
                         },
                         new
                         {
-                            Id = "85989a1d-f326-4526-8988-d6df70265a8d",
+                            Id = "15a7dcd2-6c3b-4585-bce2-0270241f7d6e",
                             CategoryId = "07a32cf2-3c7a-4ab0-ab70-9952c0966f30",
                             Name = "Hotel Manager"
                         },
                         new
                         {
-                            Id = "59fc3628-aacd-401a-9ed9-b9380f3f20fb",
+                            Id = "9b7e1554-b94e-4c2a-91cf-af2465d93c09",
                             CategoryId = "07a32cf2-3c7a-4ab0-ab70-9952c0966f30",
                             Name = "Concierge"
                         },
                         new
                         {
-                            Id = "145a0ae6-310d-4f28-9196-186264de0181",
+                            Id = "64a522d8-6f5a-4d50-8e43-d7d5ad135b65",
                             CategoryId = "38b5eb73-7829-497b-a207-9bcf3fef3b1b",
                             Name = "Mechanical Engineer"
                         },
                         new
                         {
-                            Id = "5637a422-4878-4a9c-9ba4-390ca88f689c",
+                            Id = "b2db03c1-3c7c-44bb-bf82-8e35c212a7e1",
                             CategoryId = "38b5eb73-7829-497b-a207-9bcf3fef3b1b",
                             Name = "Electrical Engineer"
                         },
                         new
                         {
-                            Id = "dcefec07-21f6-4e31-946f-0c93d4cda413",
+                            Id = "85e233cf-85a2-4d5c-b0b3-9ef7a7a3523d",
                             CategoryId = "38b5eb73-7829-497b-a207-9bcf3fef3b1b",
                             Name = "Civil Engineer"
                         },
                         new
                         {
-                            Id = "92da4b72-ba6e-4c65-a606-6b2b1620751b",
+                            Id = "9e8b4cb4-c9fb-4c54-8935-22eac0d69b6e",
                             CategoryId = "38b5eb73-7829-497b-a207-9bcf3fef3b1b",
                             Name = "Chemical Engineer"
                         },
                         new
                         {
-                            Id = "99fab28e-9dfc-4a92-a339-815b60926258",
+                            Id = "f30e12fb-05cc-4153-8a4a-2d31f3d9b2c8",
                             CategoryId = "38b5eb73-7829-497b-a207-9bcf3fef3b1b",
                             Name = "Computer Engineer"
                         },
                         new
                         {
-                            Id = "2ba54fe4-4ec1-443a-bc07-6857dd5fe830",
+                            Id = "c47607b0-606e-48ee-b3cf-5df0f6a69e9e",
                             CategoryId = "38b5eb73-7829-497b-a207-9bcf3fef3b1b",
                             Name = "Software Engineer"
                         },
                         new
                         {
-                            Id = "99ff55b3-6726-417e-848b-7f20f7c21b85",
+                            Id = "d77c3684-9ab9-4b51-85a4-45790c16d1ae",
                             CategoryId = "438c1389-c017-43b8-a34a-46b8c64f5e1d",
                             Name = "HR Manager"
                         },
                         new
                         {
-                            Id = "05176258-1280-4bc1-9192-6e7e886c710d",
+                            Id = "a8b7a34b-f7d7-4c4a-9297-49e93b09ecb6",
                             CategoryId = "438c1389-c017-43b8-a34a-46b8c64f5e1d",
                             Name = "Talent Acquisition Specialist/Recruiter"
                         },
                         new
                         {
-                            Id = "95a77fcf-cbbd-4572-89fc-9cb367afc8e8",
+                            Id = "ee54b64a-76bc-47ff-81a3-02a4ac6c0d35",
                             CategoryId = "438c1389-c017-43b8-a34a-46b8c64f5e1d",
                             Name = "Compensation and Benefits Manager"
                         },
                         new
                         {
-                            Id = "60f34046-e85a-4ae8-ac45-894a137ff2a3",
+                            Id = "baf35a3f-daf9-4b1f-a746-d75da4fcad9b",
                             CategoryId = "438c1389-c017-43b8-a34a-46b8c64f5e1d",
                             Name = "Training and Development Specialist"
                         },
                         new
                         {
-                            Id = "72a2a3fc-e1ec-44a0-9177-fc5b05c5a457",
+                            Id = "c6b32d99-681b-47f6-93c6-7c318fe8b3c8",
                             CategoryId = "438c1389-c017-43b8-a34a-46b8c64f5e1d",
                             Name = "HR Coordinator"
                         },
                         new
                         {
-                            Id = "eb1866fb-9cec-4928-af0c-9d7f714b1b29",
+                            Id = "768442d1-47f4-44e3-8863-c2d45060f1e7",
                             CategoryId = "3c1fda93-5ef8-4db2-97f7-25f163fbca67",
                             Name = "Journalist"
                         },
                         new
                         {
-                            Id = "ff34812f-0c7e-4655-9995-8d82076656aa",
+                            Id = "b8ef7c1c-7408-4956-83f0-1cb9b3284416",
                             CategoryId = "3c1fda93-5ef8-4db2-97f7-25f163fbca67",
                             Name = "Editor"
                         },
                         new
                         {
-                            Id = "ec7d32c6-df6a-4014-b932-3d2f8bd315a7",
+                            Id = "81c74767-f1b5-4599-84f0-7ae382448d8d",
                             CategoryId = "3c1fda93-5ef8-4db2-97f7-25f163fbca67",
                             Name = "Writer"
                         },
                         new
                         {
-                            Id = "e38ce0c4-9812-42b7-8f26-8ec836f907bc",
+                            Id = "dc31dd20-d5f7-4f26-b611-8b0427b2ee32",
                             CategoryId = "3c1fda93-5ef8-4db2-97f7-25f163fbca67",
                             Name = "Reporter"
                         },
                         new
                         {
-                            Id = "97b485bb-323e-4f16-be6b-b2933fb67665",
+                            Id = "d38e1340-4e35-47f4-a4e2-d2d8d07a9b4e",
                             CategoryId = "3c1fda93-5ef8-4db2-97f7-25f163fbca67",
                             Name = "Publisher"
                         },
                         new
                         {
-                            Id = "3c2a4a45-8c1f-4a5c-840d-f6e5df97a804",
+                            Id = "e0b6c971-9122-4042-8d43-2a0ee17b2dd7",
                             CategoryId = "3c1fda93-5ef8-4db2-97f7-25f163fbca67",
                             Name = "Copy Editor"
                         },
                         new
                         {
-                            Id = "69f24ec2-e557-4878-88b4-bb9b33c6611f",
+                            Id = "5b3fd229-c3b3-4cc7-84cf-7d4807927c88",
                             CategoryId = "c4dd9eea-1569-402f-a5b8-8473f48437a1",
                             Name = "Logistics Coordinator"
                         },
                         new
                         {
-                            Id = "cb09e6b7-8891-4b5b-93af-13037da85399",
+                            Id = "c22b89de-97c8-4dc8-a2a7-2ad7eb61ec5e",
                             CategoryId = "c4dd9eea-1569-402f-a5b8-8473f48437a1",
                             Name = "Supply Chain Manager"
                         },
                         new
                         {
-                            Id = "10501dee-9197-4df1-a3ff-f542e626cc1e",
+                            Id = "d1e2ab06-08a0-439a-a05a-b7dd93cb1876",
                             CategoryId = "c4dd9eea-1569-402f-a5b8-8473f48437a1",
                             Name = "Freight Forwarder"
                         },
                         new
                         {
-                            Id = "e19823ed-79fd-45a1-a1c3-fad35ff4a367",
+                            Id = "746fa7c6-bb09-4e8d-89a5-4a9403e6fd91",
                             CategoryId = "c4dd9eea-1569-402f-a5b8-8473f48437a1",
                             Name = "Warehouse Manager"
                         },
                         new
                         {
-                            Id = "a0e1166f-c2e3-457d-8d67-7e41a9566af1",
+                            Id = "b3cf2977-d04d-44d3-b1d6-ecf6240db0d6",
                             CategoryId = "c4dd9eea-1569-402f-a5b8-8473f48437a1",
                             Name = "Distribution Manager"
                         },
                         new
                         {
-                            Id = "517c4797-9a02-46fc-839a-85620b0c929e",
+                            Id = "5a83ff30-17c1-4484-bb0e-3b8470cc1870",
                             CategoryId = "c4dd9eea-1569-402f-a5b8-8473f48437a1",
                             Name = "Transportation Planner"
                         },
                         new
                         {
-                            Id = "f921af7b-3dca-4a5b-888c-c3ec015c7b8a",
+                            Id = "8e238be6-32ac-48e5-89d0-d43f7c7b1be5",
                             CategoryId = "c468efd1-09cf-4e6c-9245-2e837e500968",
                             Name = "Customer Service Representative"
                         },
                         new
                         {
-                            Id = "97896d13-b13c-4c76-ac6c-d46c4898ee09",
+                            Id = "e607518e-f7dc-4e35-9f4d-0a16dd69d3db",
                             CategoryId = "c468efd1-09cf-4e6c-9245-2e837e500968",
                             Name = "Technical Support Specialist"
                         },
                         new
                         {
-                            Id = "91377f46-b237-47b4-95f1-8579269ca86e",
+                            Id = "5c2e8e13-03a9-4f71-bfc2-f713620ef86d",
                             CategoryId = "c468efd1-09cf-4e6c-9245-2e837e500968",
                             Name = "Technical Support Specialist"
                         },
                         new
                         {
-                            Id = "405c7736-db1f-4542-9ab8-bbb67780037c",
+                            Id = "f5bda051-7b47-418e-a4a7-68cfae8b5eef",
                             CategoryId = "c468efd1-09cf-4e6c-9245-2e837e500968",
                             Name = "Help Desk Analyst"
                         },
                         new
                         {
-                            Id = "8c915124-7f7b-422d-b253-ed7aae84405e",
+                            Id = "1a1e2c1a-91b1-456f-b23a-27d1e12e35ec",
                             CategoryId = "c468efd1-09cf-4e6c-9245-2e837e500968",
                             Name = "Customer Success Manager"
                         },
                         new
                         {
-                            Id = "d1c580ca-f825-42c4-b727-42272b250094",
+                            Id = "a1e8fe6a-9027-4f9d-8532-0f44c569c810",
                             CategoryId = "c468efd1-09cf-4e6c-9245-2e837e500968",
                             Name = "Client Support Specialist"
                         },
                         new
                         {
-                            Id = "63fd0952-dfc2-4c65-9f2f-f901b2345730",
+                            Id = "ae791c2d-0d5f-44d8-86b1-6d7ad46e4de9",
                             CategoryId = "ff13d479-760d-4387-8843-c882ad150609",
                             Name = "Bank Teller"
                         },
                         new
                         {
-                            Id = "2c5b98be-3eae-490d-96ed-602a2d34446f",
+                            Id = "05a4867c-c86e-43da-9c63-f09753e5d7d8",
                             CategoryId = "ff13d479-760d-4387-8843-c882ad150609",
                             Name = "Loan Officer"
                         },
                         new
                         {
-                            Id = "f713de92-f0e7-413f-a34c-79e8334c8977",
+                            Id = "15f1df94-291d-4f8a-92c0-3f2f4fe0e6c8",
                             CategoryId = "ff13d479-760d-4387-8843-c882ad150609",
                             Name = "Financial Advisor"
                         },
                         new
                         {
-                            Id = "868a2331-bd33-4de7-bac0-3df433239856",
+                            Id = "cf8e2882-5683-4eb3-9687-43897f28a27e",
                             CategoryId = "ff13d479-760d-4387-8843-c882ad150609",
                             Name = "Branch Manager"
                         },
                         new
                         {
-                            Id = "2f4179da-7810-45f7-b8c2-0a23db90dfd3",
+                            Id = "a7b254d2-6a12-40ad-9885-b86814a5a4b2",
                             CategoryId = "ff13d479-760d-4387-8843-c882ad150609",
                             Name = "Mortgage Broker"
                         },
                         new
                         {
-                            Id = "c950cec2-1f98-4810-8471-59be6e411799",
+                            Id = "3debb73d-325f-47cc-8499-b2c9f8ed2045",
                             CategoryId = "ff13d479-760d-4387-8843-c882ad150609",
                             Name = "Credit Analyst"
                         },
                         new
                         {
-                            Id = "338ba2ff-a1dd-421b-b34c-cc74ddffcef3",
+                            Id = "c1f48fb3-6e0d-45ef-a95c-268f441b8403",
                             CategoryId = "bdb3c38b-bc2f-48d3-a2f6-56f74573cecb",
                             Name = "Marketing Manager"
                         },
                         new
                         {
-                            Id = "05e0a46c-181f-4e9e-9c2a-a888ba1c3e7b",
+                            Id = "8a1b9ba4-d9e1-4d80-8617-13e607f1722c",
                             CategoryId = "bdb3c38b-bc2f-48d3-a2f6-56f74573cecb",
                             Name = "Advertising Executive"
                         },
                         new
                         {
-                            Id = "2e838421-32a7-4c70-af86-551dfaef72e2",
+                            Id = "ac8937b8-cd1b-4846-80cc-4c8e79dc9786",
                             CategoryId = "bdb3c38b-bc2f-48d3-a2f6-56f74573cecb",
                             Name = "Public Relations Specialist"
                         },
                         new
                         {
-                            Id = "df3d7970-d07c-4d6c-8a24-f0b9db999d83",
+                            Id = "d6b43e8f-9068-41c1-818a-0d9e3541fe86",
                             CategoryId = "bdb3c38b-bc2f-48d3-a2f6-56f74573cecb",
                             Name = "Brand Manager"
                         },
                         new
                         {
-                            Id = "62d88616-99bf-4ecb-865a-231b08c4bc0a",
+                            Id = "e61546d8-5258-479f-8d6c-ecf52bbf40e8",
                             CategoryId = "bdb3c38b-bc2f-48d3-a2f6-56f74573cecb",
                             Name = "Digital Marketing Specialist"
                         },
                         new
                         {
-                            Id = "f2b910cd-8649-42cd-ba4a-911e80e72b33",
+                            Id = "5fc255cf-3993-46a8-a307-1c1ef4248e08",
                             CategoryId = "bdb3c38b-bc2f-48d3-a2f6-56f74573cecb",
                             Name = "Social Media Manager"
                         },
                         new
                         {
-                            Id = "86d0722c-b0f6-4dd6-8a86-99cbfb57155a",
+                            Id = "b7cc4e9b-0624-4e8d-ba19-9266d90e20cb",
                             CategoryId = "71eb6b38-7552-425e-bf09-ee22d23855bb",
                             Name = "Office Manager"
                         },
                         new
                         {
-                            Id = "0d0aeb1c-4302-4916-8e4f-e95e38a7b136",
+                            Id = "dc5f6828-d7d7-458a-9d18-d25fb61d02af",
                             CategoryId = "71eb6b38-7552-425e-bf09-ee22d23855bb",
                             Name = "Administrative Assistant"
                         },
                         new
                         {
-                            Id = "2dc89507-d182-4032-8b18-42d6bf03245d",
+                            Id = "1d865eb6-af2e-4485-8d1a-6c684e02dc1b",
                             CategoryId = "71eb6b38-7552-425e-bf09-ee22d23855bb",
                             Name = "Executive Assistant"
                         },
                         new
                         {
-                            Id = "15e9eb6f-e7c7-4d1c-bfe7-9309a283541f",
+                            Id = "3a8e6162-67b3-45bc-aade-f57cb0147581",
                             CategoryId = "71eb6b38-7552-425e-bf09-ee22d23855bb",
                             Name = "Office Administrator"
                         },
                         new
                         {
-                            Id = "f8463622-9bc8-4896-a538-5288ff1ac729",
+                            Id = "a3f9fd8e-021c-4d7a-b2b7-b808b163bc83",
                             CategoryId = "71eb6b38-7552-425e-bf09-ee22d23855bb",
                             Name = "Receptionist"
                         },
                         new
                         {
-                            Id = "059b2e2a-a0bb-4aef-8a36-1ab583658d01",
+                            Id = "ee53b8de-2ac9-4d7c-a5bc-7d1f6d9a90c0",
                             CategoryId = "71eb6b38-7552-425e-bf09-ee22d23855bb",
                             Name = "Data Entry Clerk"
                         },
                         new
                         {
-                            Id = "a7f4190f-357b-4d7d-a3e1-9a32b596a829",
+                            Id = "be73dbb1-f6b5-4be1-881d-289a0435a176",
                             CategoryId = "f239ac3f-856e-494c-95df-2521a3269a6b",
                             Name = "Electrical Engineer"
                         },
                         new
                         {
-                            Id = "a1a00e9b-91f5-4f02-a059-755efe612359",
+                            Id = "d65e1d14-d0cf-4815-83e7-73f22dd6d21e",
                             CategoryId = "f239ac3f-856e-494c-95df-2521a3269a6b",
                             Name = "Mechanical Engineer"
                         },
                         new
                         {
-                            Id = "626f8df9-1bd1-4421-af0b-ddf0d1426753",
+                            Id = "8f527e14-11a0-468e-bb29-918a5a90cb3e",
                             CategoryId = "f239ac3f-856e-494c-95df-2521a3269a6b",
                             Name = "Power Plant Operator"
                         },
                         new
                         {
-                            Id = "c1c71fdf-7510-4df2-bb7d-1d0b02d98286",
+                            Id = "92b5b7f7-2d8e-4f9b-8049-14fb6dab160f",
                             CategoryId = "f239ac3f-856e-494c-95df-2521a3269a6b",
                             Name = "Utility Technician"
                         },
                         new
                         {
-                            Id = "24344455-3d11-4a36-b23d-3d2b3739c65b",
+                            Id = "7db1c426-0e26-43f6-95b2-3a4c9a0e60fb",
                             CategoryId = "f239ac3f-856e-494c-95df-2521a3269a6b",
                             Name = "Energy Analyst"
                         },
                         new
                         {
-                            Id = "a1e58aef-0cb1-464b-aa09-2d6c49e85f17",
+                            Id = "e6a1ecf2-5d8d-4b39-8305-f5b75dd13a01",
                             CategoryId = "f239ac3f-856e-494c-95df-2521a3269a6b",
                             Name = "Renewable Energy Specialist"
                         },
                         new
                         {
-                            Id = "750d03b0-2791-4ea1-8df8-ab3442b5d3d4",
+                            Id = "98ee0c64-b2cd-4c31-8561-d86c96c405c4",
                             CategoryId = "3ea25504-1598-4608-a362-84d82b1b2fce",
                             Name = "Telecommunications Engineer"
                         },
                         new
                         {
-                            Id = "0d1aace7-ae73-4aa6-be19-0abcd9a38126",
+                            Id = "7a0c7a11-57db-4be8-8b7e-9c28c4c33085",
                             CategoryId = "3ea25504-1598-4608-a362-84d82b1b2fce",
                             Name = "Network Engineer"
                         },
                         new
                         {
-                            Id = "967843e8-aa9b-4561-816c-932e0c2872d8",
+                            Id = "3df00e70-7a0e-4a1a-bded-9b83799c8181",
                             CategoryId = "3ea25504-1598-4608-a362-84d82b1b2fce",
                             Name = "Telecom Systems Engineer"
                         },
                         new
                         {
-                            Id = "2000efee-5d6f-44a4-b43e-d0a7aa4f7a12",
+                            Id = "20c1e62b-46cd-47b6-880f-fdd12aa89a1d",
                             CategoryId = "3ea25504-1598-4608-a362-84d82b1b2fce",
                             Name = "RF Engineer (Radio Frequency)"
                         },
                         new
                         {
-                            Id = "fcaf42cf-4f06-4764-bd44-fce5d065a66f",
+                            Id = "f293b5f6-f7d0-4dc5-b072-0d5268a2530c",
                             CategoryId = "3ea25504-1598-4608-a362-84d82b1b2fce",
                             Name = "Optical Network Engineer"
                         },
                         new
                         {
-                            Id = "a180378d-013a-460f-a193-dffc8e604d74",
+                            Id = "f4d21aa6-868e-4744-8275-b15b84f36e3e",
                             CategoryId = "3ea25504-1598-4608-a362-84d82b1b2fce",
                             Name = "VoIP Engineer (Voice over Internet Protocol)"
                         },
                         new
                         {
-                            Id = "1cb0fbe5-13cb-4091-aaa2-2dc4d8604117",
+                            Id = "6518d38b-34d8-418d-bb9a-786f560e2314",
                             CategoryId = "16bf1012-a018-453d-97f2-d9682a3588f1",
                             Name = "Teacher"
                         },
                         new
                         {
-                            Id = "9af916ad-afdf-4648-8bb3-8d18e3dc54d1",
+                            Id = "f60cf3fb-5dd8-4b09-b46f-1e357e468fcc",
                             CategoryId = "16bf1012-a018-453d-97f2-d9682a3588f1",
                             Name = "Professor"
                         },
                         new
                         {
-                            Id = "78fbc6e9-f210-4242-b652-8b4145f14bff",
+                            Id = "a9815f4f-d85d-48e0-896b-258d89f82884",
                             CategoryId = "16bf1012-a018-453d-97f2-d9682a3588f1",
                             Name = "Instructor"
                         },
                         new
                         {
-                            Id = "cc4bd5c3-c241-47e1-8871-20ccb50d8459",
+                            Id = "0a4b6a5d-4dc2-4376-9b8d-f218e1e6e68b",
                             CategoryId = "16bf1012-a018-453d-97f2-d9682a3588f1",
                             Name = "Tutor"
                         },
                         new
                         {
-                            Id = "99e7fefc-aab0-4872-bd70-ec096e91788a",
+                            Id = "1d38807e-52d1-4f21-8a92-4aeecda64838",
                             CategoryId = "16bf1012-a018-453d-97f2-d9682a3588f1",
                             Name = "Educational Consultant"
                         },
                         new
                         {
-                            Id = "6f925444-b148-494c-bd53-bbd344ee6662",
+                            Id = "143f3523-11c2-4a0b-ba63-bc5d6f19255a",
                             CategoryId = "16bf1012-a018-453d-97f2-d9682a3588f1",
                             Name = "Curriculum Developer"
                         },
                         new
                         {
-                            Id = "dcb461c9-a03c-495a-b683-77bf1a0777a0",
+                            Id = "b4b07136-27d4-4a1f-b9fc-97e03c1b448f",
                             CategoryId = "8910967e-2a14-4a1a-a3f5-d16cc78a4b32",
                             Name = "Security Guard"
                         },
                         new
                         {
-                            Id = "a94e989f-a232-47b7-8bef-948e9e460ed9",
+                            Id = "ba2d8ad0-130d-4cf5-b508-1e5f61ef056a",
                             CategoryId = "8910967e-2a14-4a1a-a3f5-d16cc78a4b32",
                             Name = "Security Officer"
                         },
                         new
                         {
-                            Id = "06e5a49d-3949-4827-9b05-459aadb0ac58",
+                            Id = "160c1c89-af8c-49e0-9c85-3968fb465b55",
                             CategoryId = "8910967e-2a14-4a1a-a3f5-d16cc78a4b32",
                             Name = "Security Supervisor"
                         },
                         new
                         {
-                            Id = "82243ee7-2335-4c60-978d-89d30cd6a14d",
+                            Id = "00b088f2-b24d-4d42-8d80-5d50b4ae02ab",
                             CategoryId = "8910967e-2a14-4a1a-a3f5-d16cc78a4b32",
                             Name = "Security Manager"
                         },
                         new
                         {
-                            Id = "441fb5bb-d32f-46ff-9080-ef0ee60866f7",
+                            Id = "181aa1e7-0053-4b99-80ee-88f173ba2f12",
                             CategoryId = "8910967e-2a14-4a1a-a3f5-d16cc78a4b32",
                             Name = "Private Investigator"
                         },
                         new
                         {
-                            Id = "1cfcec36-fde1-4e06-9c53-efe703e0272b",
+                            Id = "a9dd6d86-2270-4b05-975d-816a14cfbe63",
                             CategoryId = "8910967e-2a14-4a1a-a3f5-d16cc78a4b32",
                             Name = "Bodyguard"
                         },
                         new
                         {
-                            Id = "ef07ec8a-569d-4709-a070-4f3c8e73f71c",
+                            Id = "b1b5008b-50b0-48c3-9f0c-44e7eb31567f",
                             CategoryId = "0676aec9-89f5-4511-b642-6d0fe86e404a",
                             Name = "Real Estate Agent"
                         },
                         new
                         {
-                            Id = "94fa9352-09f5-4e70-9db7-bec6b496e631",
+                            Id = "1ac27ba5-49d7-4c09-b4ac-10d376a8b198",
                             CategoryId = "0676aec9-89f5-4511-b642-6d0fe86e404a",
                             Name = "Real Estate Broker"
                         },
                         new
                         {
-                            Id = "52688025-4242-4bfa-b580-80119b011a11",
+                            Id = "d571f77c-8c1f-48df-8a8f-cce98a3180b2",
                             CategoryId = "0676aec9-89f5-4511-b642-6d0fe86e404a",
                             Name = "Realtor"
                         },
                         new
                         {
-                            Id = "1a2ed841-69f5-46da-a655-0b74d609073d",
+                            Id = "e876ba3a-16aa-4d27-bd80-fa9ed78e84db",
                             CategoryId = "0676aec9-89f5-4511-b642-6d0fe86e404a",
                             Name = "Property Manager"
                         },
                         new
                         {
-                            Id = "860f8264-7b75-4953-a085-9d8c877062af",
+                            Id = "d9160ad9-dc8e-4097-9b5e-5a39985f7d69",
                             CategoryId = "0676aec9-89f5-4511-b642-6d0fe86e404a",
                             Name = "Real Estate Appraiser"
                         },
                         new
                         {
-                            Id = "34c3e30e-74e0-4c2b-85a2-4996802461d4",
+                            Id = "b4749a27-2c91-4d42-b271-8f272e78dd82",
                             CategoryId = "0676aec9-89f5-4511-b642-6d0fe86e404a",
                             Name = "Leasing Consultant"
                         },
                         new
                         {
-                            Id = "dfb3d439-fd7b-449c-ae65-892f1f92028c",
+                            Id = "ac60f725-8a5a-4453-b76b-50c0b1f204a1",
                             CategoryId = "ec4b3c64-1f2f-455d-a6e4-75b525625371",
                             Name = "Lawyer/Attorney"
                         },
                         new
                         {
-                            Id = "83cb70cb-8fcc-4789-b6c8-1a57ec09d557",
+                            Id = "5b4417b5-29a4-41e2-813a-8953730341f5",
                             CategoryId = "ec4b3c64-1f2f-455d-a6e4-75b525625371",
                             Name = "Paralegal"
                         },
                         new
                         {
-                            Id = "d90c05d7-b195-4651-b3fe-864ee7441f1b",
+                            Id = "a2a21176-84b5-4537-85d2-c0c30058b7e2",
                             CategoryId = "ec4b3c64-1f2f-455d-a6e4-75b525625371",
                             Name = "Legal Assistant"
                         },
                         new
                         {
-                            Id = "e229f146-0877-48bb-82a0-19bce751797a",
+                            Id = "6b9519a7-d540-4d54-9ef3-271c5c2e7f1d",
                             CategoryId = "ec4b3c64-1f2f-455d-a6e4-75b525625371",
                             Name = "Legal Secretary"
                         },
                         new
                         {
-                            Id = "2df8d8b4-44ce-459e-9f03-01438c3008e0",
+                            Id = "be76b792-9e0e-4c42-a7fd-514b2ec04f20",
                             CategoryId = "ec4b3c64-1f2f-455d-a6e4-75b525625371",
                             Name = "Judge"
                         },
                         new
                         {
-                            Id = "f41fb9a5-4783-4eb9-be5a-5af08270b5c0",
+                            Id = "de08f21c-1d36-42f7-9ec8-f37907988e91",
                             CategoryId = "ec4b3c64-1f2f-455d-a6e4-75b525625371",
                             Name = "Legal Consultant"
                         },
                         new
                         {
-                            Id = "3a4a0790-9d34-4d71-bd96-3d01b97ca981",
+                            Id = "e5b34805-13f5-42ad-ba77-85ed67cbf5a5",
                             CategoryId = "18aee4dd-17bc-4fe9-8d8d-18ed13a9138c",
                             Name = "Pilot"
                         },
                         new
                         {
-                            Id = "050ac9d3-ac51-448a-b1e4-4f42456f5f20",
+                            Id = "0cfa84cc-0c1f-4729-a60a-36ab826a1a06",
                             CategoryId = "18aee4dd-17bc-4fe9-8d8d-18ed13a9138c",
                             Name = "Co-pilot/First Officer"
                         },
                         new
                         {
-                            Id = "a8019116-a9fd-425a-8ad0-4b5222538af4",
+                            Id = "b4858ff4-2dd3-4bc8-9aae-49c6a8c8fd06",
                             CategoryId = "18aee4dd-17bc-4fe9-8d8d-18ed13a9138c",
                             Name = "Flight Attendant"
                         },
                         new
                         {
-                            Id = "4678fd8b-1142-4412-bd9a-3a1f188447e2",
+                            Id = "a7597cd2-3dcf-4d56-b36a-00e8a20cf8ef",
                             CategoryId = "18aee4dd-17bc-4fe9-8d8d-18ed13a9138c",
                             Name = "Air Traffic Controller"
                         },
                         new
                         {
-                            Id = "17a6b69d-8b00-4ed5-af42-93d6b6875b1a",
+                            Id = "f65d013a-854a-4a13-8d15-fce80b63e156",
                             CategoryId = "18aee4dd-17bc-4fe9-8d8d-18ed13a9138c",
                             Name = "Aircraft Maintenance Technician"
                         },
                         new
                         {
-                            Id = "2f2ac025-bfeb-4364-904e-d0697b0b6f53",
+                            Id = "88e2c320-3b99-4cfc-8b4e-8a0b0f6899ef",
                             CategoryId = "18aee4dd-17bc-4fe9-8d8d-18ed13a9138c",
                             Name = "Aircraft Dispatcher"
                         },
                         new
                         {
-                            Id = "5670c0cb-e3d6-4a25-a49c-48810142e29c",
+                            Id = "4df73c30-0951-4a41-8db1-19742ed4206a",
                             CategoryId = "221e3547-3c78-41f9-9634-d7571a615fb8",
                             Name = "Automotive Technician/Mechanic"
                         },
                         new
                         {
-                            Id = "66063fa7-e9c7-4bc6-9faa-e33a4abb736a",
+                            Id = "92f7c3e1-2d18-47a6-ae12-7cc146c0d4fd",
                             CategoryId = "221e3547-3c78-41f9-9634-d7571a615fb8",
                             Name = "Automotive Service Advisor"
                         },
                         new
                         {
-                            Id = "2397710f-b1b0-4486-9a48-64aa8611d218",
+                            Id = "548d12ac-837a-4c13-b7fc-b77c15d36ff9",
                             CategoryId = "221e3547-3c78-41f9-9634-d7571a615fb8",
                             Name = "Auto Body Repair Technician"
                         },
                         new
                         {
-                            Id = "78f564de-cdee-48b4-915a-27f0ed3b1dbb",
+                            Id = "3f0f3cd7-d7f7-49e6-95ee-43a536e49e8d",
                             CategoryId = "221e3547-3c78-41f9-9634-d7571a615fb8",
                             Name = "Automotive Electrician"
                         },
                         new
                         {
-                            Id = "ea376b62-fabb-40e9-9dfc-097456ed6eae",
+                            Id = "f70d41ab-46c7-4d97-b6c2-7fd61b0549b2",
                             CategoryId = "221e3547-3c78-41f9-9634-d7571a615fb8",
                             Name = "Brake Technician"
                         },
                         new
                         {
-                            Id = "245035c0-30a6-4820-b578-47a6993f848d",
+                            Id = "8c23f6cf-916d-41c7-8f35-5d3e5c4e8d6d",
                             CategoryId = "221e3547-3c78-41f9-9634-d7571a615fb8",
                             Name = "Transmission Technician"
                         },
                         new
                         {
-                            Id = "f413ddf7-49aa-4baf-be09-44ee85d955ad",
+                            Id = "c7514c88-0a16-4d54-b2c0-cb79916a494b",
                             CategoryId = "265bc199-91e3-4eba-9886-bce0a19e6ce2",
                             Name = "Retail Sales Associate"
                         },
                         new
                         {
-                            Id = "f67a3a36-2281-4c1c-ae05-0004669cfb0b",
+                            Id = "6d42145c-0cd9-4ee5-a4f1-c39dc6e464a1",
                             CategoryId = "265bc199-91e3-4eba-9886-bce0a19e6ce2",
                             Name = "Store Manager"
                         },
                         new
                         {
-                            Id = "7bfc2fed-4f46-479e-99fc-0622d3295768",
+                            Id = "93a1ec1e-af3e-4bc4-8048-62e69f6acdf2",
                             CategoryId = "265bc199-91e3-4eba-9886-bce0a19e6ce2",
                             Name = "Assistant Store Manager"
                         },
                         new
                         {
-                            Id = "917233e9-66b4-4544-a699-7ea0cb85797a",
+                            Id = "27f6e1e3-c567-48af-92c4-d9f7ccdf90b2",
                             CategoryId = "265bc199-91e3-4eba-9886-bce0a19e6ce2",
                             Name = "Cashier"
                         },
                         new
                         {
-                            Id = "08731b78-d451-4108-a711-f3d88a0b450b",
+                            Id = "0d199b44-7e67-42f8-b9d1-15f6666993d7",
                             CategoryId = "265bc199-91e3-4eba-9886-bce0a19e6ce2",
                             Name = "Customer Service Representative"
                         },
                         new
                         {
-                            Id = "0f371117-e4e8-491b-a5b3-86eaa2bebc2c",
+                            Id = "2d6a8b5e-b6d8-4f68-b7c2-5ed7d1065a54",
                             CategoryId = "265bc199-91e3-4eba-9886-bce0a19e6ce2",
                             Name = "Retail Merchandiser"
                         },
                         new
                         {
-                            Id = "20f75e9a-fb41-4c68-9c1a-7a5522257bb2",
+                            Id = "3ad80bfa-1de4-4a3e-9d80-78b1e4f38138",
                             CategoryId = "fd71ecf5-cb6d-4e3c-ad4e-84358bdfa328",
                             Name = "Technical Support Specialist"
                         },
                         new
                         {
-                            Id = "29573caf-9e1b-4996-909a-d1ea50639eec",
+                            Id = "28d90df0-7592-4d33-915d-dba1b3cd95e5",
                             CategoryId = "fd71ecf5-cb6d-4e3c-ad4e-84358bdfa328",
                             Name = "Help Desk Technician"
                         },
                         new
                         {
-                            Id = "0b86802b-8054-42ea-88ee-af6b970c637d",
+                            Id = "7ad9df7e-29f8-4b95-aa6e-f78d5c32d8c2",
                             CategoryId = "fd71ecf5-cb6d-4e3c-ad4e-84358bdfa328",
                             Name = "IT Support Engineer"
                         },
                         new
                         {
-                            Id = "034511f3-67ce-4f55-99eb-3568b944f3ae",
+                            Id = "6ecaa7c5-c11f-44aa-bad8-842af947e55f",
                             CategoryId = "fd71ecf5-cb6d-4e3c-ad4e-84358bdfa328",
                             Name = "Customer Support Engineer"
                         },
                         new
                         {
-                            Id = "7b4c1102-2baf-49db-a2a9-25c23d06fb7f",
+                            Id = "2dbdb1b6-7e1c-46b4-a51a-d5d27a1e56ff",
                             CategoryId = "fd71ecf5-cb6d-4e3c-ad4e-84358bdfa328",
                             Name = "Desktop Support Technician"
                         },
                         new
                         {
-                            Id = "d76d948b-5354-47d8-b4b7-3581577ffcf3",
+                            Id = "f7ed1254-7005-4568-bf02-02e1e37aa2bb",
                             CategoryId = "fd71ecf5-cb6d-4e3c-ad4e-84358bdfa328",
                             Name = "Network Support Technician"
                         },
                         new
                         {
-                            Id = "2f833572-ef7f-4d05-8d35-02eb7bc743ff",
+                            Id = "ce81a194-2ec1-4b5c-a7aa-524cc11b06a6",
                             CategoryId = "6859c0a0-98d0-49c5-b017-17d2a64d3342",
                             Name = "Research Scientist"
                         },
                         new
                         {
-                            Id = "10f1dff4-dadc-446c-a591-5cea7f3791a7",
+                            Id = "b6e83eb5-8d9a-40d5-9891-4c19117a09ed",
                             CategoryId = "6859c0a0-98d0-49c5-b017-17d2a64d3342",
                             Name = "R&D Engineer"
                         },
                         new
                         {
-                            Id = "d87f47c0-629b-472b-aa11-bf05c0b39632",
+                            Id = "289cb58e-b29d-4c64-8201-dfde7ff59c1a",
                             CategoryId = "6859c0a0-98d0-49c5-b017-17d2a64d3342",
                             Name = "Research Associate"
                         },
                         new
                         {
-                            Id = "f9d6f062-72cc-44bc-b245-01320e38fa26",
+                            Id = "f8a0cb10-8c65-4640-9954-80f0c9eeed0b",
                             CategoryId = "6859c0a0-98d0-49c5-b017-17d2a64d3342",
                             Name = "Laboratory Technician"
                         },
                         new
                         {
-                            Id = "df03fabc-1996-4f90-bcb0-85cef7d91596",
+                            Id = "b2f68861-f6c8-4484-bf80-99fc9349d53a",
                             CategoryId = "6859c0a0-98d0-49c5-b017-17d2a64d3342",
                             Name = "Product Development Manager"
                         },
                         new
                         {
-                            Id = "22a63c49-f68a-4dcc-b7c7-3c3d06aae66f",
+                            Id = "b6d002cb-d10f-40e7-9867-7e60f972a8a2",
                             CategoryId = "6859c0a0-98d0-49c5-b017-17d2a64d3342",
                             Name = "Data Scientist"
                         },
                         new
                         {
-                            Id = "c25c8960-9173-49e2-b889-c79e8ca38fa6",
+                            Id = "d7e1f951-b436-4e07-98d7-71571c55e90a",
                             CategoryId = "dc8214a6-79cf-436c-bae1-7387b82a3bce",
                             Name = "Accountant"
                         },
                         new
                         {
-                            Id = "c5ef38e9-4b40-4819-8520-70e01059dee9",
+                            Id = "3b64b94a-0518-4796-9c4b-71aaf89e0f46",
                             CategoryId = "dc8214a6-79cf-436c-bae1-7387b82a3bce",
                             Name = "Auditor"
                         },
                         new
                         {
-                            Id = "c0d83ba4-d544-48d0-9ffc-3b4ef3eb503a",
+                            Id = "8e8a09b2-3033-4866-8f9f-f896bfc5eb6a",
                             CategoryId = "dc8214a6-79cf-436c-bae1-7387b82a3bce",
                             Name = "Financial Analyst"
                         },
                         new
                         {
-                            Id = "9cdb9f77-ca97-4541-ada4-6450311ae0f5",
+                            Id = "ccd5fc90-b3f1-45fc-89bc-28c5f0cb1d42",
                             CategoryId = "dc8214a6-79cf-436c-bae1-7387b82a3bce",
                             Name = "Certified Public Accountant (CPA)"
                         },
                         new
                         {
-                            Id = "960d8810-21c4-4959-8494-72e66ba523c1",
+                            Id = "da7d57e3-334d-4e2a-8496-3e2c0e740a48",
                             CategoryId = "dc8214a6-79cf-436c-bae1-7387b82a3bce",
                             Name = "Tax Accountant"
                         },
                         new
                         {
-                            Id = "11b150d8-cad5-4911-a422-5d7968e3afbf",
+                            Id = "b1b6a016-5e24-4515-b4d8-1e7b97836b28",
                             CategoryId = "dc8214a6-79cf-436c-bae1-7387b82a3bce",
                             Name = "Bookkeeper"
                         });
@@ -1521,19 +1521,19 @@ namespace DTB.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "622f1450-f901-4095-9dc3-f3fd7e43da3c",
+                            Id = "6530f828-f8af-41fd-b651-94a1392793e9",
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
-                            Id = "593db2b7-d37f-4664-8a34-a0eeb8fc543d",
+                            Id = "a98655fe-8cf3-43d7-9f14-6e54222f3240",
                             Name = "Company",
                             NormalizedName = "COMPANY"
                         },
                         new
                         {
-                            Id = "0d8c7ffe-ce9a-44c6-95bb-afcbed821363",
+                            Id = "e1dfafac-528a-43f9-b350-048ac84639a3",
                             Name = "Administrator",
                             NormalizedName = "ADMINISTRATOR"
                         });
@@ -1714,14 +1714,14 @@ namespace DTB.Infrastructure.Migrations
                         {
                             Id = "cad23a9b-e215-45e8-823f-87207f8c2b71",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "2bd95cb4-4acf-42a0-b46e-d3c2f5cca845",
+                            ConcurrencyStamp = "19e1efb2-93ff-4d17-b0dd-ce5902cc3cbf",
                             Email = "test@abv.bg",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedUserName = "test@abv.bg",
                             PasswordHash = "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "709d1d95-e7c3-4827-92f0-ea5f94ba7903",
+                            SecurityStamp = "a7658f0c-125a-4dc6-be75-ce62805ce513",
                             TwoFactorEnabled = false,
                             UserName = "test",
                             DateOfBirth = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),

@@ -16,5 +16,7 @@ namespace DTB.Infrastructure.Data.Entities
         public Category Category { get; set; } = null!;
 
         public string CategoryId { get; set; } = null!;
+
+        //public List<JobAd> JobAds { get; set; } = new();
     }
 }

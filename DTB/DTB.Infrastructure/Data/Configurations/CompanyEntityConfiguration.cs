@@ -173,15 +173,3 @@
 //                        Address = "444 Advertisers Avenue, AdCity, PromoLand 34567",
 //                        CategoryId = "bdb3c38b-bc2f-48d3-a2f6-56f74573cecb"
 
-//                    },
-//                    new Company
-//                    {
-//                      //  Id = "b47a504c-d9e8-4931-8829-4b82844f7685",
-//                        Name = "FinTech Financial Solutions Inc.",
-//                        Address = "555 Finance Street, MoneyCity, AuditLand 45678",
-//                        CategoryId = "16bf1012-a018-453d-97f2-d9682a3588f1"
-//                    }
-//            };
-//        }
-//    }
-//}
