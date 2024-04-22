@@ -9,20 +9,20 @@ namespace DTB.Infrastructure.Data.Configurations
     {
         public void Configure(EntityTypeBuilder<JobAd> builder)
         {
-            builder.HasData(
-                new JobAd
-                {
-                    Id = "56fe9d96-21c1-4b8e-9a84-6d92d0fbb2f3",
-                    ProfessionId = "063a9c7b-f301-4e49-a718-5975654b4b07",
-                    Experience = "Two years",
-                    Description = "We are seeking an experienced Aircraft Dispatcher to join our team. The Aircraft Dispatcher" +
-                    " will play a crucial role in planning and coordinating flight operations to ensure the safe and efficient movement of aircraft." +
-                    " The ideal candidate will have a strong understanding of aviation regulations and procedures" +
-                    ", excellent communication skills, and the ability to work well under pressure.",
-                    CompanyId = "993a6fd5-7c2b-4789-9104-8353e676e0ab",
-                    CategoryId = "18aee4dd-17bc-4fe9-8d8d-18ed13a9138c",
-                    LocationId = "0ade62ed-aeb5-42fe-b87b-55432e1e4e61"
-                });
+            //builder.HasData(
+            //    new JobAd
+            //    {
+            //        Id = "56fe9d96-21c1-4b8e-9a84-6d92d0fbb2f3",
+            //        ProfessionId = "063a9c7b-f301-4e49-a718-5975654b4b07",
+            //        Experience = "Two years",
+            //        Description = "We are seeking an experienced Aircraft Dispatcher to join our team. The Aircraft Dispatcher" +
+            //        " will play a crucial role in planning and coordinating flight operations to ensure the safe and efficient movement of aircraft." +
+            //        " The ideal candidate will have a strong understanding of aviation regulations and procedures" +
+            //        ", excellent communication skills, and the ability to work well under pressure.",
+            //        CompanyId = "993a6fd5-7c2b-4789-9104-8353e676e0ab",
+            //        CategoryId = "18aee4dd-17bc-4fe9-8d8d-18ed13a9138c",
+            //        LocationId = "0ade62ed-aeb5-42fe-b87b-55432e1e4e61"
+            //    });
                 //new JobAd
                 //{
                 //    Id = "c5e4787e-f2ab-4e0b-8622-54879a81d73c",
