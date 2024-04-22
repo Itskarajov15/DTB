@@ -67,7 +67,7 @@
                     <ul class="nav">
                         <li>
                             <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Articles
                                 </button>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -76,13 +76,23 @@
                                 </div>
                             </div>
                         </li>
-                        <li><a asp-controller="Job" asp-action="All">Jobs</a></li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Jobs
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" asp-controller="Job" asp-action="All">Jobs</a>
+                                    <a class="dropdown-item" asp-controller="Job" asp-action="Add">Create</a>
+                                </div>
+                            </div>
+                        </li>
                         <li><a asp-controller="Home" asp-action="ContactUs">Contact Us</a></li>
                         <li><a asp-controller="Home" asp-action="AboutUs">About Us</a></li>
                         @if (!SignInManager.IsSignedIn(User))
                         {
                             <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Sign in
                                 </button>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">

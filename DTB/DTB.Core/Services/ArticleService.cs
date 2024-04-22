@@ -14,18 +14,6 @@ namespace DTB.Core.Services
         {
             this.context = context;
         }
-        public async Task<string> AddArticleAsync(AddArticleViewModel model, string id)
-        {
-            Article article = new Article()
-            {
-
-            };
-
-            await this.context.Articles.AddAsync(article);
-            await this.context.SaveChangesAsync();
-
-            return article.Id;
-        }
 
         public async Task<ArticleViewModel> GetAricleByIdAsync(string id)
         {
@@ -59,6 +47,23 @@ namespace DTB.Core.Services
                     Title = a.Title
                 })
                 .ToListAsync();
+        }
+
+        public async Task AddArticleAsync(AddArticleViewModel model)
+        {
+            var newArticle = new Article()
+            {
+                Id = Guid.NewGuid().ToString(),
+                Title = model.Title,
+                Content = model.Content,
+                AuthorId = model.AuthorId,
+                ImageUrl = model.ImageUrl,
+                DateOfCreation= DateTime.Now
+            };
+
+            await context.AddAsync(newArticle);
+
+            await context.SaveChangesAsync();
         }
     }
 }

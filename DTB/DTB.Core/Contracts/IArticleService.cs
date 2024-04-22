@@ -4,7 +4,7 @@ namespace DTB.Core.Contracts
 {
     public interface IArticleService
     {
-        Task<string> AddArticleAsync(AddArticleViewModel model, string id);
+        Task AddArticleAsync(AddArticleViewModel model);
 
         Task<List<GetAllArticlesViewModel>> GetAllAsync();
 

@@ -4,6 +4,7 @@ using DTB.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DTB.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240415215434_seedDataForCompanies")]
+    partial class seedDataForCompanies
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -34,7 +37,7 @@ namespace DTB.Infrastructure.Migrations
 
                     b.HasIndex("LocationsId");
 
-                    b.ToTable("CompanyLocation", (string)null);
+                    b.ToTable("CompanyLocation");
                 });
 
             modelBuilder.Entity("DTB.Infrastructure.Data.Entities.Article", b =>
@@ -66,7 +69,7 @@ namespace DTB.Infrastructure.Migrations
 
                     b.HasIndex("AuthorId");
 
-                    b.ToTable("Articles", (string)null);
+                    b.ToTable("Articles");
 
                     b.HasData(
                         new
@@ -229,7 +232,7 @@ namespace DTB.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Categories", (string)null);
+                    b.ToTable("Categories");
 
                     b.HasData(
                         new
@@ -409,7 +412,7 @@ namespace DTB.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Chats", (string)null);
+                    b.ToTable("Chats");
                 });
 
             modelBuilder.Entity("DTB.Infrastructure.Data.Entities.Comment", b =>
@@ -434,7 +437,7 @@ namespace DTB.Infrastructure.Migrations
 
                     b.HasIndex("AuthorId");
 
-                    b.ToTable("Comments", (string)null);
+                    b.ToTable("Comments");
                 });
 
             modelBuilder.Entity("DTB.Infrastructure.Data.Entities.ContactFormSubmission", b =>
@@ -456,7 +459,7 @@ namespace DTB.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("ContactFormSubmissions", (string)null);
+                    b.ToTable("ContactFormSubmissions");
                 });
 
             modelBuilder.Entity("DTB.Infrastructure.Data.Entities.File", b =>
@@ -480,7 +483,7 @@ namespace DTB.Infrastructure.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Files", (string)null);
+                    b.ToTable("Files");
                 });
 
             modelBuilder.Entity("DTB.Infrastructure.Data.Entities.JobAd", b =>
@@ -520,7 +523,7 @@ namespace DTB.Infrastructure.Migrations
 
                     b.HasIndex("ProfessionId");
 
-                    b.ToTable("JobAds", (string)null);
+                    b.ToTable("JobAds");
                 });
 
             modelBuilder.Entity("DTB.Infrastructure.Data.Entities.Location", b =>
@@ -535,7 +538,7 @@ namespace DTB.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Locations", (string)null);
+                    b.ToTable("Locations");
 
                     b.HasData(
                         new
@@ -617,7 +620,7 @@ namespace DTB.Infrastructure.Migrations
 
                     b.HasIndex("SenderId");
 
-                    b.ToTable("Messages", (string)null);
+                    b.ToTable("Messages");
                 });
 
             modelBuilder.Entity("DTB.Infrastructure.Data.Entities.Profession", b =>
@@ -638,7 +641,7 @@ namespace DTB.Infrastructure.Migrations
 
                     b.HasIndex("CategoryId");
 
-                    b.ToTable("Professions", (string)null);
+                    b.ToTable("Professions");
 
                     b.HasData(
                         new

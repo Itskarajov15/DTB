@@ -1,0 +1,60 @@
+﻿@using DTB.ViewModels.Job
+@model AddJobViewModel
+@{
+    ViewBag.Title = "Add Job";
+}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js" integrity="sha512-lbwH47l/tPXJYG9AcFNoJaTMhGvYWhVM9YI43CT+uteTRRaiLCui8snIgyAN8XWgNjNhCqlAUdzZptso6OCoFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.css" integrity="sha512-6S2HWzVFxruDlZxI3sXOZZ4/eJ8AcxkQH1+JjSe/ONCEqR9L4Ysq5JdT5ipqtzU7WHalNwzwBv+iE51gNHJNqQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<div class="text-center mt-5">
+    <h1>Add Job</h1>
+</div>
+<hr />
+<form asp-action="Add" method="post" class="row g-3 bg-light p-2 text-dark bg-opacity-75 center">
+
+    <input asp-for="@Model.Id" type="hidden" />
+
+    <div class="col-md-6">
+        <label asp-for="@Model.Profession" class="form-label">Profession</label>
+        <input asp-for="@Model.Profession" class="form-control" id="inputProfession" placeholder="Doctor..." aria-required="true">
+        <span asp-validation-for="@Model.Profession" class="text-danger"></span>
+    </div>
+    <div class="col-12">
+        <label asp-for="@Model.Experience" class="form-label">Content</label>
+        <textarea asp-for="@Model.Experience" class="form-control" id="inputExperience" aria-required="true" placeholder="Experience...."></textarea>
+        <span asp-validation-for="@Model.Experience" class="text-danger"></span>
+    </div>
+    <div class="col-md-12">
+        <label asp-for="@Model.Description" class="form-label">Description</label>
+        <input asp-for="@Model.Description" class="form-control" aria-required="true" placeholder="Description..." id="inputDescription">
+        <span asp-validation-for="@Model.Description" class="text-danger"></span>
+    </div>
+
+    <div class="col-md-6">
+        <label asp-for="@Model.Company" class="form-label">Company</label>
+        <input asp-for="@Model.Company" class="form-control" id="inputCompany" placeholder="Company..." aria-required="true">
+        <span asp-validation-for="@Model.Company" class="text-danger"></span>
+    </div>
+    <div class="col-12">
+        <label asp-for="@Model.Location" class="form-label">Location</label>
+        <textarea asp-for="@Model.Location" class="form-control" id="inputLocation" aria-required="true" placeholder="Location...."></textarea>
+        <span asp-validation-for="@Model.Location" class="text-danger"></span>
+    </div>
+    <div class="col-md-12">
+        <label asp-for="@Model.Category" class="form-label">Category</label>
+        <input asp-for="@Model.Category" class="form-control" aria-required="true" placeholder="Category..." id="inputCategory">
+        <span asp-validation-for="@Model.Category" class="text-danger"></span>
+    </div>
+
+    <div class="col-12 text-center">
+        <button type="submit" class="btn btn-outline-success">Add Job</button>
+    </div>
+</form>
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

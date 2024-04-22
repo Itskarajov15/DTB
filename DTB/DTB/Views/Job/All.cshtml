@@ -20,7 +20,7 @@ else
                         <h5 class="card-title">@job.Profession</h5>
                         <h3 class="card-title">@job.Company</h3>
                         <p class="card-text">@job.Description</p>
-                        <a asp-action="GetJob" asp-controller="Job" class="btn btn-primary">View the job</a>
+                        <a asp-action="Job" asp-controller="Job" asp-route-id="@job.Id" class="btn btn-primary">View the job</a>
                     </div>
                 </div>
             </div>

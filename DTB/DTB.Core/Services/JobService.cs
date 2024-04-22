@@ -18,17 +18,39 @@ namespace DTB.Core.Services
         {
             return await context
             .JobAds
+            .Include(j => j.Company)
             .Select(a => new GetAllJobsViewModel
             {
                 Id = a.Id,
                 Profession = a.Profession.Name,
                 Experience = a.Experience,
                 Description = a.Description,
-                Company = a.Company.Name,
+                Company = "Nai-dobrata firma",
                 Location = a.Location.Name,
                 Category = a.Category.Name
             })
             .ToListAsync();
+        }
+
+        public async Task<JobViewModel> GetJobById(string id)
+        {
+            var result = await context
+            .JobAds
+            .Include(j => j.Company)
+            .Where(j => j.Id == id)
+            .Select(a => new JobViewModel
+            {
+                Id = a.Id,
+                Profession = a.Profession.Name,
+                Experience = a.Experience,
+                Description = a.Description,
+                Company = "Nai-dobrata firma",
+                Location = a.Location.Name,
+                Category = a.Category.Name
+            })
+            .FirstOrDefaultAsync();
+
+            return result;
         }
     }
 }

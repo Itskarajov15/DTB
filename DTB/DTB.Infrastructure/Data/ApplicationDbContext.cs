@@ -43,6 +43,7 @@ namespace DTB.Infrastructure.Data
             new UserEntityConfiguration().Configure(builder.Entity<User>());
             new ArticleEntityConfiguration().Configure(builder.Entity<Article>());
             new ProfessionEntityConfiguration().Configure(builder.Entity<Profession>()); 
+            //new CompanyEntityConfiguration().Configure(builder.Entity<Company>());
 
             base.OnModelCreating(builder);
         }

@@ -13,8 +13,6 @@ namespace DTB.ViewModels.Article
 
         public string AuthorId { get; set; } = null!;
 
-        public BaseUser Author { get; set; } = null!;
-
         public DateTime DateOfCreation { get; set; }
 
         public string ImageUrl { get; set; } = null!;
